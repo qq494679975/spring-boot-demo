@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 1304489315@qq.com
+    password: qq邮箱的授权码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  boot:
+    admin:
+      notify:
+        mail:
+          to: yinjihuan@fangjia.com  # 发送给谁
+          from: 1304489315@qq.com # 是谁发送出去的

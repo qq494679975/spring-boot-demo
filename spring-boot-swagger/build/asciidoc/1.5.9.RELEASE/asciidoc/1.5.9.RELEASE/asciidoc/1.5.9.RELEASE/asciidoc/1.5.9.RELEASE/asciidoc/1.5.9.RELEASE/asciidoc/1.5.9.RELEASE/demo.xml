@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc maxdepth="3"?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>三师平台API</title>
+<date>2018-01-18 10:41:54</date>
+<revhistory>
+<revision>
+<revnumber>1.5.9.RELEASE</revnumber>
+<date>2018-01-18 10:41:54</date>
+</revision>
+</revhistory>
+</info>
+<chapter xml:id="_overview">
+<title>概览</title>
+<simpara>对外部应用提供功能与数据接口。</simpara>
+<section xml:id="_版本信息">
+<title>版本信息</title>
+<simpara><emphasis>版本</emphasis> : 1.0</simpara>
+</section>
+<section xml:id="_联系方式">
+<title>联系方式</title>
+<simpara><emphasis>名字</emphasis> : <link xl:href="mailto:admin@jkzl.com">admin@jkzl.com</link></simpara>
+</section>
+<section xml:id="_许可信息">
+<title>许可信息</title>
+<simpara><emphasis>许可证</emphasis> : The Apache License, Version 2.0<?asciidoc-br?>
+<emphasis>许可网址</emphasis> : <link xl:href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</link><?asciidoc-br?>
+<emphasis>服务条款</emphasis> : No terms of service</simpara>
+</section>
+<section xml:id="_uri_scheme">
+<title>URI scheme</title>
+<simpara><emphasis>域名</emphasis> : 127.0.0.1:8080<?asciidoc-br?>
+<emphasis>基础路径</emphasis> : /</simpara>
+</section>
+<section xml:id="_标签">
+<title>标签</title>
+<itemizedlist>
+<listitem>
+<simpara>测试模块 : 测试</simpara>
+</listitem>
+</itemizedlist>
+</section>
+</chapter>
+<chapter xml:id="_paths">
+<title>资源</title>
+<section xml:id="_65e836d3d556c04f200c143f91180804">
+<title>测试模块</title>
+<simpara>测试</simpara>
+<section xml:id="_testswaggerusingget">
+<title>测试swagger</title>
+<literallayout class="monospaced">GET //demo/</literallayout>
+<section xml:id="_参数">
+<title>参数</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="4">
+<colspec colname="col_1" colwidth="11.1111*"/>
+<colspec colname="col_2" colwidth="16.6666*"/>
+<colspec colname="col_3" colwidth="50*"/>
+<colspec colname="col_4" colwidth="22.2223*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">类型</entry>
+<entry align="left" valign="middle">名称</entry>
+<entry align="left" valign="middle">说明</entry>
+<entry align="left" valign="middle">类型</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">Query</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">username</emphasis><?asciidoc-br?>
+<emphasis>必填</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>测试</simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_响应">
+<title>响应</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="10*"/>
+<colspec colname="col_2" colwidth="70*"/>
+<colspec colname="col_3" colwidth="20*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">HTTP代码</entry>
+<entry align="left" valign="middle">说明</entry>
+<entry align="left" valign="middle">类型</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">200</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>OK</simpara></entry>
+<entry align="left" valign="middle"><simpara><link linkend="_simpleresultofdemo">SimpleResultOfDemo</link></simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_消耗">
+<title>消耗</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_生成">
+<title>生成</title>
+<itemizedlist>
+<listitem>
+<simpara><literal>application/json;charset=UTF-8</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_http请求示例">
+<title>HTTP请求示例</title>
+<section xml:id="_请求_path">
+<title>请求 path</title>
+<screen>//demo/</screen>
+</section>
+<section xml:id="_请求_query">
+<title>请求 query</title>
+<programlisting language="json" linenumbering="unnumbered">{
+  "username" : "string"
+}</programlisting>
+</section>
+</section>
+<section xml:id="_http响应示例">
+<title>HTTP响应示例</title>
+<section xml:id="_响应_200">
+<title>响应 200</title>
+<programlisting language="json" linenumbering="unnumbered">{
+  "data" : {
+    "age" : 0,
+    "name" : "string"
+  },
+  "msg" : "string",
+  "status" : 0,
+  "timestamp" : 0
+}</programlisting>
+</section>
+</section>
+</section>
+</section>
+</chapter>
+<chapter xml:id="_definitions">
+<title>定义</title>
+<section xml:id="_demo">
+<title>Demo</title>
+<simpara>测试swagger生成</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="16.6666*"/>
+<colspec colname="col_2" colwidth="61.1111*"/>
+<colspec colname="col_3" colwidth="22.2223*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">名称</entry>
+<entry align="left" valign="middle">说明</entry>
+<entry align="left" valign="middle">类型</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">age</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>年龄<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <literal>0</literal></simpara></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">name</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>姓名<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <literal>"string"</literal></simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section xml:id="_simpleresultofdemo">
+<title>SimpleResultOfDemo</title>
+<simpara>获取单个实体信息返回</simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="16.6666*"/>
+<colspec colname="col_2" colwidth="61.1111*"/>
+<colspec colname="col_3" colwidth="22.2223*"/>
+<thead>
+<row>
+<entry align="left" valign="middle">名称</entry>
+<entry align="left" valign="middle">说明</entry>
+<entry align="left" valign="middle">类型</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">data</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>内容<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <xref linkend="_demo"/></simpara></entry>
+<entry align="left" valign="middle"><simpara><link linkend="_demo">Demo</link></simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">msg</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>错误消息<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <literal>"string"</literal></simpara></entry>
+<entry align="left" valign="middle"><simpara>string</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">status</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>错误代码<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <literal>0</literal></simpara></entry>
+<entry align="left" valign="middle"><simpara>integer (int32)</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="middle"><simpara><emphasis role="strong">timestamp</emphasis><?asciidoc-br?>
+<emphasis>可选</emphasis></simpara></entry>
+<entry align="left" valign="middle"><simpara>返回时间戳<?asciidoc-br?>
+<emphasis role="strong">样例</emphasis> : <literal>0</literal></simpara></entry>
+<entry align="left" valign="middle"><simpara>integer (int64)</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+</chapter>
+</book>

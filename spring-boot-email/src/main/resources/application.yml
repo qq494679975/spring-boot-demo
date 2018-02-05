@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+## QQ邮箱->设置->账户->POP3/SMTP服务:开启服务后会获得QQ的授权码
+
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 1501877145@qq.com
+    protocol: smtp
+    password: uihqhvqtrnkwhdhf #QQ的授权码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+           class: javax.net.ssl.SSLSocketFactory
+          starttls: true
+          required: true
+

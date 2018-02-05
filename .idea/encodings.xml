@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-async" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-data-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-email" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-gatling-report" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-gatling-report-scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jdbc-druid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jms-activemq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jpa-h2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-jta" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-logback" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-oauth2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-restdocs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-shell" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-statemachine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-war" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-webservice" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

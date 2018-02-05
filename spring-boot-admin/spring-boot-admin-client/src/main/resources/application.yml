@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+
+
+spring:
+  application:
+    name: admin-client
+
+
+  boot:
+    admin:
+      url: http://localhost:8081
+
+#关闭安全认证
+management:
+  security:
+    enabled: false

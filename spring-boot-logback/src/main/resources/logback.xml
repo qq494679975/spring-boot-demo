@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+
+    <appender name="demo_console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %level %C.%M %m%n</pattern> <!-- %C.%M 可能会影响效率-->
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+    <!-- 按照天去滚动日志-->
+    <appender name="demo_rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/logs/openAPI/openAPI.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/logs/openAPI/openAPI.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--<maxHistory>15</maxHistory>-->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d %level %C.%M %m%n</pattern> <!-- %C.%M 可能会影响效率-->
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="demo_logger" level="INFO" additivity="false">
+        <appender-ref ref="demo_console"/>
+        <appender-ref ref="demo_rollingFile"/>
+    </logger>
+
+
+    <!--扩展flume  start-->
+
+    <appender name="flume" class="demo.cwd.logback.expand.flume.FlumeLogstashV1Appender">
+        <flumeAgents>
+            flume-es-1b.gilt.com:5000,
+            flume-es-1c.gilt.com:5000,
+            flume-es-1d.gilt.com:5000
+        </flumeAgents>
+        <flumeProperties>
+            connect-timeout=4000;
+            request-timeout=8000
+        </flumeProperties>
+        <batchSize>100</batchSize>
+        <reportingWindow>1000</reportingWindow>
+        <additionalAvroHeaders>
+            myHeader=myValue
+        </additionalAvroHeaders>
+        <application>smapleapp</application>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - \(%file:%line\) - %message%n%ex</pattern>
+        </layout>
+    </appender>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - \(%file:%line\) - %message%n%ex</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="flume_logger" level="INFO" additivity="false">
+        <appender-ref ref="flume"/>
+        <appender-ref ref="console"/>
+    </logger>
+    <!--扩展flume  end-->
+</configuration>

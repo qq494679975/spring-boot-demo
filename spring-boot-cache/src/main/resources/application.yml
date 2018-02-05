@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+    # REDIS
+  redis:
+    host: 172.19.103.88 # Redis server host.
+    port: 6379 # Redis server port.
+#    password: jkzl_ehr
+    database: 8 # Database index used by the connection factory.
+    password: # Login password of the redis server.
+    timeout: 120000 # 连接超时时间（毫秒） 60秒
+    pool:
+      max-active: 20 # 连接池最大连接数（使用负值表示没有限制）
+      max-wait: -1  # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-idle: 20  # 连接池中的最大空闲连接
+      min-idle: 5  # 连接池中的最小空闲连接

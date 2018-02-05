@@ -1,0 +1,93 @@
+spring:
+
+  datasource:
+    type: com.alibaba.druid.pool.xa.DruidXADataSource
+    druid:
+      # WebStatFilter配置，说明请参考Druid Wiki，配置_配置WebStatFilter
+      web-stat-filter:
+        enabled: true
+        urlPattern:
+        exclusions:
+        sessionStatMaxCount:
+        sessionStatEnable:
+        principalSessionName:
+        principalCookieName:
+        profileEnable:
+      # StatViewServlet配置，说明请参考Druid Wiki，配置_StatViewServlet配置
+      stat-view-servlet:
+        enabled: true
+        urlPattern:
+        resetEnable: false
+        loginUsername: admin
+        loginPassword: 123456
+        allow: 127.0.0.1
+        deny:
+     # Spring监控配置，说明请参考Druid Github Wiki，配置_Druid和Spring关联监控配置
+     # Spring监控AOP切入点，如x.y.z.service.*,配置多个英文逗号分隔
+      aop-patterns:
+        - com.chint.springboot.atomikos.*.service.**
+
+
+      demo:
+        name: demo
+        url: jdbc:mysql://localhost/demo?characterEncoding=utf-8
+        username: root
+        password: 123456
+        # 下面为连接池的补充设置，应用到上面所有数据源中
+        initialSize: 5 # 初始化大小
+        minIdle: 5  # 最小
+        maxActive: 20 #最大
+        # 配置获取连接等待超时的时间
+        maxWait: 60000
+        # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+        timeBetweenEvictionRunsMillis: 60000
+        # 配置一个连接在池中最小生存的时间，单位是毫秒
+        minEvictableIdleTimeMillis: 30
+        validationQuery: SELECT 1
+        validationQueryTimeout: 10000
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        # 打开PSCache，并且指定每个连接上PSCache的大小
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,wall
+        # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+        # 合并多个DruidDataSource的监控数据
+        useGlobalDataSourceStat: true
+
+      test:
+        name: test
+        url: jdbc:mysql://localhost/test?characterEncoding=utf-8
+        username: root
+        password: 123456
+        # 下面为连接池的补充设置，应用到上面所有数据源中
+        # 初始化大小，最小，最大
+        initialSize: 5
+        minIdle: 5
+        maxActive: 20
+        # 配置获取连接等待超时的时间
+        maxWait: 60000
+        # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+        timeBetweenEvictionRunsMillis: 60000
+        # 配置一个连接在池中最小生存的时间，单位是毫秒
+        minEvictableIdleTimeMillis: 30
+        validationQuery: SELECT 1
+        validationQueryTimeout: 10000
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        # 打开PSCache，并且指定每个连接上PSCache的大小
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,wall
+        # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+        # 合并多个DruidDataSource的监控数据
+        useGlobalDataSourceStat: true
+
+  #jta相关参数配置
+  jta:
+    log-dir: classpath:tx-logs
+    transaction-manager-id: txManager

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="spring-boot-aop" />
+        <module name="spring-boot-async" />
+        <module name="spring-boot-cache" />
+        <module name="spring-boot-data-rest" />
+        <module name="spring-boot-email" />
+        <module name="spring-boot-gatling-report" />
+        <module name="spring-boot-gatling-report-scala" />
+        <module name="spring-boot-jar" />
+        <module name="spring-boot-jdbc-druid" />
+        <module name="spring-boot-jms-activemq" />
+        <module name="spring-boot-jpa" />
+        <module name="spring-boot-jpa-h2" />
+        <module name="spring-boot-jta" />
+        <module name="spring-boot-logback" />
+        <module name="spring-boot-mvc" />
+        <module name="spring-boot-oauth2" />
+        <module name="spring-boot-redis" />
+        <module name="spring-boot-restdocs" />
+        <module name="spring-boot-security" />
+        <module name="spring-boot-shell" />
+        <module name="spring-boot-statemachine" />
+        <module name="spring-boot-swagger" />
+        <module name="spring-boot-war" />
+        <module name="spring-boot-webservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-aop" target="1.6" />
+      <module name="spring-boot-async" target="1.6" />
+      <module name="spring-boot-cache" target="1.6" />
+      <module name="spring-boot-data-rest" target="1.6" />
+      <module name="spring-boot-demo" target="1.6" />
+      <module name="spring-boot-email" target="1.6" />
+      <module name="spring-boot-gatling-report" target="1.6" />
+      <module name="spring-boot-gatling-report-scala" target="1.6" />
+      <module name="spring-boot-jar" target="1.6" />
+      <module name="spring-boot-jdbc-druid" target="1.6" />
+      <module name="spring-boot-jms-activemq" target="1.6" />
+      <module name="spring-boot-jpa" target="1.6" />
+      <module name="spring-boot-jpa-h2" target="1.6" />
+      <module name="spring-boot-jta" target="1.6" />
+      <module name="spring-boot-logback" target="1.6" />
+      <module name="spring-boot-mvc" target="1.6" />
+      <module name="spring-boot-oauth2" target="1.6" />
+      <module name="spring-boot-redis" target="1.6" />
+      <module name="spring-boot-restdocs" target="1.6" />
+      <module name="spring-boot-security" target="1.6" />
+      <module name="spring-boot-shell" target="1.6" />
+      <module name="spring-boot-statemachine" target="1.6" />
+      <module name="spring-boot-swagger" target="1.6" />
+      <module name="spring-boot-war" target="1.6" />
+      <module name="spring-boot-webservice" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

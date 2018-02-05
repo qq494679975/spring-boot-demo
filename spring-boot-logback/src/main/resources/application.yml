@@ -1,0 +1,45 @@
+spring:
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 50
+    maxActive: 50
+    minIdle: 50 #最大空闲连接
+    maxWait: 50
+    validationQuery: SELECT 1 #SQL 查询， 用来验证从连接池取出的连接， 在将连接返回给调用者之前。 如果指定， 则查询必须是一个SQL SELECT 并且必须返回至少一行记录
+    testOnBorrow: true #指明是否在从池中取出连接前进行检验， 如果检验失败， 则从池中去除连接并尝试取出另一个。注意： 设置为true 后如果要生效，validationQuery 参数必须设置为非空字符串
+    testOnReturn: true #指明是否在归还到池中前进行检验 注意： 设置为true 后如果要生效validationQuery 参数必须设置为非空字符串
+    testWhileIdle: true #指明连接是否被空闲连接回收器(如果有)进行检验，如果检测失败，则连接将被从池中去除
+    minEvictableIdleTimeMillis: 3600000 #连接池中连接，在时间段内一直空闲，被逐出连接池的时间(1000*60*60)，以毫秒为单位
+    timeBetweenEvictionRunsMillis: 300000 #在空闲连接回收器线程运行期间休眠的时间值,以毫秒为单位，一般比minEvictableIdleTimeMillis小
+    poolPreparedStatements: true # 打开PSCache，并且指定每个连接上PSCache的大小
+    maxPoolPreparedStatementPerConnectionSize: 50
+    removeAbandoned: false #超过时间限制是否回收
+    removeAbandonedTimeout: 7200 #超时时间；单位为秒。180秒=3分钟
+    logAbandoned: false #关闭abanded连接时输出错误日志
+    filters: stat,wall,logback #配置监控统计拦截的filters，去掉后监控界面sql将无法统计,'wall'用于防火墙
+
+
+  redis:
+    loginOutTime: 24 #小时
+    database: 0 # Database index used by the connection factory.
+    password: # Login password of the redis server.
+    timeout: 120000 # 连接超时时间（毫秒） 60秒
+    pool:
+      max-active: 20 # 连接池最大连接数（使用负值表示没有限制）
+      max-wait: -1  # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-idle: 20  # 连接池中的最大空闲连接
+      min-idle: 5  # 连接池中的最小空闲连接
+
+
+hibernate:
+  dialect: org.hibernate.dialect.MySQL5Dialect
+  show_sql: true
+  ejb:
+    naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+
+
+ehr:
+  api:
+    login: 123

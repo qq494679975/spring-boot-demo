@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: jkzl #es集群的名字
+      cluster-nodes: 172.19.103.68:9300  #多个逗号分割
+      cluster-nodes-jest: http://172.19.103.68:9200  #多个逗号分割
+      repositories:
+        enabled: true
+      properties:
+        client:
+          transport:
+            sniff: false #开启嗅探集群  用nginx代理一层过后会出现ip解析失败问题

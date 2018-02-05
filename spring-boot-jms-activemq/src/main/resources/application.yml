@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+
+spring:
+  activemq:
+    broker-url: tcp://172.19.103.87:61616
+    user: admin
+    password: admin
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" filepath="$PROJECT_DIR$/spring-boot-aop/spring-boot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-async/spring-boot-async.iml" filepath="$PROJECT_DIR$/spring-boot-async/spring-boot-async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cache/spring-boot-cache.iml" filepath="$PROJECT_DIR$/spring-boot-cache/spring-boot-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-data-rest/spring-boot-data-rest.iml" filepath="$PROJECT_DIR$/spring-boot-data-rest/spring-boot-data-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" filepath="$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-gatling-report/spring-boot-gatling-report.iml" filepath="$PROJECT_DIR$/spring-boot-gatling-report/spring-boot-gatling-report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-gatling-report-scala/spring-boot-gatling-report-scala.iml" filepath="$PROJECT_DIR$/spring-boot-gatling-report-scala/spring-boot-gatling-report-scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jar/spring-boot-jar.iml" filepath="$PROJECT_DIR$/spring-boot-jar/spring-boot-jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jdbc-druid/spring-boot-jdbc-druid.iml" filepath="$PROJECT_DIR$/spring-boot-jdbc-druid/spring-boot-jdbc-druid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jms-activemq/spring-boot-jms-activemq.iml" filepath="$PROJECT_DIR$/spring-boot-jms-activemq/spring-boot-jms-activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jpa/spring-boot-jpa.iml" filepath="$PROJECT_DIR$/spring-boot-jpa/spring-boot-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jpa-h2/spring-boot-jpa-h2.iml" filepath="$PROJECT_DIR$/spring-boot-jpa-h2/spring-boot-jpa-h2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jta/spring-boot-jta.iml" filepath="$PROJECT_DIR$/spring-boot-jta/spring-boot-jta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-logback/spring-boot-logback.iml" filepath="$PROJECT_DIR$/spring-boot-logback/spring-boot-logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mvc/spring-boot-mvc.iml" filepath="$PROJECT_DIR$/spring-boot-mvc/spring-boot-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-oauth2/spring-boot-oauth2.iml" filepath="$PROJECT_DIR$/spring-boot-oauth2/spring-boot-oauth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-restdocs/spring-boot-restdocs.iml" filepath="$PROJECT_DIR$/spring-boot-restdocs/spring-boot-restdocs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" filepath="$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-shell/spring-boot-shell.iml" filepath="$PROJECT_DIR$/spring-boot-shell/spring-boot-shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-statemachine/spring-boot-statemachine.iml" filepath="$PROJECT_DIR$/spring-boot-statemachine/spring-boot-statemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" filepath="$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-war/spring-boot-war.iml" filepath="$PROJECT_DIR$/spring-boot-war/spring-boot-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-webservice/spring-boot-webservice.iml" filepath="$PROJECT_DIR$/spring-boot-webservice/spring-boot-webservice.iml" />
+    </modules>
+  </component>
+</project>

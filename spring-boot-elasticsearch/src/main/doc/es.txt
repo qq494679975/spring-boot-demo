@@ -1,0 +1,30 @@
+创建索引
+POST  http://172.19.103.68:9200/person
+查询索引
+GET http://172.19.103.68:9200/person/
+给索引加mapping
+POST http://172.19.103.68:9200/person/person/_mapping
+{
+  "person": {
+    "properties": {
+      "name": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "birthday": {
+        "type": "date"
+      },
+      "eyes": {
+        "type": "nested"
+      }
+    }
+  }
+}
+
+增加索引搜索大小
+PUT  http://172.19.103.68:9200/person/_settings
+{
+  "index": {
+    "max_result_window": 500000
+  }
+}
