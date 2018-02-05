@@ -5,6 +5,8 @@
  */
 package org.h2.store.fs;
 
+import org.h2.util.New;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +14,6 @@ import java.io.OutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.List;
-import org.h2.util.New;
 
 /**
  * This utility class contains utility functions that use the file system

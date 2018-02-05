@@ -5,20 +5,17 @@
  */
 package org.h2.test.synth;
 
-import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Random;
 import org.h2.api.ErrorCode;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.test.utils.SelfDestructor;
 import org.h2.tools.Backup;
 import org.h2.util.New;
+
+import java.io.InputStream;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Standalone recovery test. A new process is started and then killed while it

@@ -5,17 +5,14 @@
  */
 package org.h2.dev.ftp.server;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
 import org.h2.engine.Constants;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 /**
  * The implementation of the control channel of the FTP server.

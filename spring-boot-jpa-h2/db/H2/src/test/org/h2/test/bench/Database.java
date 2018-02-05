@@ -5,24 +5,19 @@
  */
 package org.h2.test.bench;
 
+import org.h2.test.TestBase;
+import org.h2.tools.Server;
+import org.h2.util.StringUtils;
+
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.h2.test.TestBase;
-import org.h2.tools.Server;
-import org.h2.util.StringUtils;
 
 /**
  * Represents a database in the benchmark test application.

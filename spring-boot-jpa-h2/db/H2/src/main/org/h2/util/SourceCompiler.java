@@ -5,18 +5,15 @@
  */
 package org.h2.util;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.Writer;
+import org.h2.api.ErrorCode;
+import org.h2.engine.Constants;
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.store.fs.FileUtils;
+
+import javax.tools.*;
+import javax.tools.JavaFileObject.Kind;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -24,20 +21,6 @@ import java.net.URI;
 import java.security.SecureClassLoader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import javax.tools.FileObject;
-import javax.tools.ForwardingJavaFileManager;
-import javax.tools.JavaCompiler;
-import javax.tools.JavaFileManager;
-import javax.tools.JavaFileObject;
-import javax.tools.JavaFileObject.Kind;
-import javax.tools.SimpleJavaFileObject;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
-import org.h2.api.ErrorCode;
-import org.h2.engine.Constants;
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.store.fs.FileUtils;
 
 /**
  * This class allows to convert source code to a class. It uses one class loader

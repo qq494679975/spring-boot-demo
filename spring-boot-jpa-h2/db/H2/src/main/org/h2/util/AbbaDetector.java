@@ -5,12 +5,7 @@
  */
 package org.h2.util;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.WeakHashMap;
+import java.util.*;
 
 /**
  * Utility to detect AB-BA deadlocks.

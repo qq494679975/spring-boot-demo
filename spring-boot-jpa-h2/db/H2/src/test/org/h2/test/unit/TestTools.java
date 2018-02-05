@@ -5,36 +5,6 @@
  */
 package org.h2.test.unit;
 
-import java.awt.Button;
-import java.awt.HeadlessException;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.Reader;
-import java.io.Writer;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.math.BigDecimal;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.sql.Blob;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import org.h2.api.ErrorCode;
 import org.h2.engine.SysProperties;
 import org.h2.store.FileLister;
@@ -42,20 +12,24 @@ import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.test.trace.Player;
 import org.h2.test.utils.AssertThrows;
-import org.h2.tools.Backup;
-import org.h2.tools.ChangeFileEncryption;
-import org.h2.tools.Console;
-import org.h2.tools.ConvertTraceFile;
-import org.h2.tools.DeleteDbFiles;
-import org.h2.tools.Recover;
-import org.h2.tools.Restore;
-import org.h2.tools.RunScript;
-import org.h2.tools.Script;
-import org.h2.tools.Server;
-import org.h2.tools.SimpleResultSet;
+import org.h2.tools.*;
 import org.h2.tools.SimpleResultSet.SimpleArray;
 import org.h2.util.JdbcUtils;
 import org.h2.util.Task;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Tests the database tools.

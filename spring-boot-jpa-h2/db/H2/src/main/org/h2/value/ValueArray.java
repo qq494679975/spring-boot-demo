@@ -5,13 +5,14 @@
  */
 package org.h2.value;
 
-import java.lang.reflect.Array;
-import java.sql.PreparedStatement;
-import java.util.ArrayList;
 import org.h2.engine.Constants;
 import org.h2.util.MathUtils;
 import org.h2.util.New;
 import org.h2.util.StatementBuilder;
+
+import java.lang.reflect.Array;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
 
 /**
  * Implementation of the ARRAY data type.

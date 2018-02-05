@@ -5,28 +5,17 @@
  */
 package org.h2.tools;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.zip.DeflaterOutputStream;
-import java.util.zip.GZIPInputStream;
-import java.util.zip.GZIPOutputStream;
-import java.util.zip.InflaterInputStream;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
-
 import org.h2.api.ErrorCode;
-import org.h2.compress.CompressDeflate;
-import org.h2.compress.CompressLZF;
-import org.h2.compress.CompressNo;
-import org.h2.compress.Compressor;
-import org.h2.compress.LZFInputStream;
-import org.h2.compress.LZFOutputStream;
+import org.h2.compress.*;
 import org.h2.engine.Constants;
 import org.h2.message.DbException;
 import org.h2.mvstore.DataUtils;
 import org.h2.util.StringUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.zip.*;
 
 /**
  * A tool to losslessly compress data, and expand the compressed data again.

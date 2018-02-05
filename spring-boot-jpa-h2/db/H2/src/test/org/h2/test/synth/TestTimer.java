@@ -5,6 +5,10 @@
  */
 package org.h2.test.synth;
 
+import org.h2.test.TestBase;
+import org.h2.tools.Backup;
+import org.h2.tools.DeleteDbFiles;
+
 import java.io.File;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -12,10 +16,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.test.TestBase;
-import org.h2.tools.Backup;
-import org.h2.tools.DeleteDbFiles;
 
 /**
  * A recovery test that checks the consistency of a database (if it exists),

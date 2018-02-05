@@ -5,6 +5,15 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.*;
+import org.h2.mvstore.type.DataType;
+import org.h2.mvstore.type.ObjectDataType;
+import org.h2.mvstore.type.StringDataType;
+import org.h2.store.fs.FilePath;
+import org.h2.store.fs.FileUtils;
+import org.h2.test.TestBase;
+import org.h2.test.utils.AssertThrows;
+
 import java.lang.Thread.UncaughtExceptionHandler;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -16,20 +25,6 @@ import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
-import org.h2.mvstore.Chunk;
-import org.h2.mvstore.Cursor;
-import org.h2.mvstore.DataUtils;
-import org.h2.mvstore.FileStore;
-import org.h2.mvstore.MVMap;
-import org.h2.mvstore.MVStore;
-import org.h2.mvstore.OffHeapStore;
-import org.h2.mvstore.type.DataType;
-import org.h2.mvstore.type.ObjectDataType;
-import org.h2.mvstore.type.StringDataType;
-import org.h2.store.fs.FilePath;
-import org.h2.store.fs.FileUtils;
-import org.h2.test.TestBase;
-import org.h2.test.utils.AssertThrows;
 
 /**
  * Tests the MVStore.

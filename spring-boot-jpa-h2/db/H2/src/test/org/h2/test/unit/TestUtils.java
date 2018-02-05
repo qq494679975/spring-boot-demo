@@ -5,22 +5,14 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.math.BigInteger;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.Random;
 import org.h2.test.TestBase;
 import org.h2.util.IOUtils;
 import org.h2.util.Utils;
+
+import java.io.*;
+import java.math.BigInteger;
+import java.sql.Timestamp;
+import java.util.*;
 
 /**
  * Tests reflection utilities.

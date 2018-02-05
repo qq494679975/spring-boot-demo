@@ -5,11 +5,12 @@
  */
 package org.h2.test.jaqu;
 
-import java.util.Arrays;
-import java.util.List;
 import org.h2.jaqu.Table.JQColumn;
 import org.h2.jaqu.Table.JQIndex;
 import org.h2.jaqu.Table.JQTable;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * A table containing product data.

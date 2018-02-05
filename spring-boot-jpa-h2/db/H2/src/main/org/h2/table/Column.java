@@ -5,18 +5,12 @@
  */
 package org.h2.table;
 
-import java.sql.ResultSetMetaData;
-import java.util.Arrays;
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
 import org.h2.engine.Constants;
 import org.h2.engine.Mode;
 import org.h2.engine.Session;
-import org.h2.expression.ConditionAndOr;
-import org.h2.expression.Expression;
-import org.h2.expression.ExpressionVisitor;
-import org.h2.expression.SequenceValue;
-import org.h2.expression.ValueExpression;
+import org.h2.expression.*;
 import org.h2.message.DbException;
 import org.h2.result.Row;
 import org.h2.schema.Schema;
@@ -24,18 +18,10 @@ import org.h2.schema.Sequence;
 import org.h2.util.DateTimeUtils;
 import org.h2.util.MathUtils;
 import org.h2.util.StringUtils;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueEnum;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueString;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
-import org.h2.value.ValueTimestampTimeZone;
-import org.h2.value.ValueUuid;
+import org.h2.value.*;
+
+import java.sql.ResultSetMetaData;
+import java.util.Arrays;
 
 /**
  * This class represents a column in a table.

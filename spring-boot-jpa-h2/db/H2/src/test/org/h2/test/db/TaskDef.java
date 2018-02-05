@@ -5,10 +5,11 @@
  */
 package org.h2.test.db;
 
+import org.h2.test.utils.SelfDestructor;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import org.h2.test.utils.SelfDestructor;
 
 /**
  * A task that can be run as a separate process.

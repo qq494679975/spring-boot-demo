@@ -5,24 +5,19 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Random;
-import java.util.TreeSet;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
 import org.h2.tools.SimpleResultSet;
 import org.h2.util.New;
 import org.h2.util.StringUtils;
 import org.h2.util.Task;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.TreeSet;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Test various optimizations (query cache, optimization for MIN(..), and

@@ -5,10 +5,11 @@
  */
 package org.h2.test.unit;
 
-import java.util.BitSet;
-import java.util.Random;
 import org.h2.test.TestBase;
 import org.h2.util.BitField;
+
+import java.util.BitSet;
+import java.util.Random;
 
 /**
  * A unit test for bit fields.

@@ -5,7 +5,6 @@
  */
 package org.h2.constraint;
 
-import java.util.HashSet;
 import org.h2.engine.DbObject;
 import org.h2.engine.Session;
 import org.h2.expression.ExpressionVisitor;
@@ -17,6 +16,8 @@ import org.h2.schema.Schema;
 import org.h2.schema.SchemaObjectBase;
 import org.h2.table.Column;
 import org.h2.table.Table;
+
+import java.util.HashSet;
 
 /**
  * The base class for constraint checking.

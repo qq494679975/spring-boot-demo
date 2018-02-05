@@ -5,15 +5,15 @@
  */
 package org.h2.value;
 
+import org.h2.api.ErrorCode;
+import org.h2.message.DbException;
+import org.h2.util.MathUtils;
+import org.h2.util.StringUtils;
+import org.h2.util.Utils;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.UUID;
-
-import org.h2.api.ErrorCode;
-import org.h2.message.DbException;
-import org.h2.util.Utils;
-import org.h2.util.MathUtils;
-import org.h2.util.StringUtils;
 
 /**
  * Implementation of the UUID data type.

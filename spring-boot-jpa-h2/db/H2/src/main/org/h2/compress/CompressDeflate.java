@@ -5,13 +5,13 @@
  */
 package org.h2.compress;
 
+import org.h2.api.ErrorCode;
+import org.h2.message.DbException;
+
 import java.util.StringTokenizer;
 import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
-
-import org.h2.api.ErrorCode;
-import org.h2.message.DbException;
 
 /**
  * This is a wrapper class for the Deflater class.

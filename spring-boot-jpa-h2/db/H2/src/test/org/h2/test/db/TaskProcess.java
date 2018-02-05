@@ -5,19 +5,13 @@
  */
 package org.h2.test.db;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
 import org.h2.test.utils.SelfDestructor;
 import org.h2.util.StringUtils;
 import org.h2.util.Task;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A task that is run as an external process. This class communicates over

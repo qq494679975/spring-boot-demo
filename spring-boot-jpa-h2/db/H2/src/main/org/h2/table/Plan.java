@@ -5,16 +5,17 @@
  */
 package org.h2.table;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
 import org.h2.engine.Session;
 import org.h2.expression.Expression;
 import org.h2.expression.ExpressionVisitor;
 import org.h2.message.Trace;
 import org.h2.table.TableFilter.TableFilterVisitor;
 import org.h2.util.New;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * A possible query execution plan. The time required to execute a query depends

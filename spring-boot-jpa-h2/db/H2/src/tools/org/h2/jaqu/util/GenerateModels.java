@@ -5,24 +5,19 @@
  */
 package org.h2.jaqu.util;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.Writer;
+import org.h2.jaqu.Db;
+import org.h2.jaqu.DbInspector;
+import org.h2.message.DbException;
+import org.h2.util.JdbcUtils;
+import org.h2.util.StringUtils;
+
+import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.h2.jaqu.Db;
-import org.h2.jaqu.DbInspector;
-import org.h2.message.DbException;
-import org.h2.util.JdbcUtils;
-import org.h2.util.StringUtils;
 
 /**
  * Generates JaQu models.

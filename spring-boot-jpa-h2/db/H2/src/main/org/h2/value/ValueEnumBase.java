@@ -5,9 +5,10 @@
  */
 package org.h2.value;
 
+import org.h2.util.MathUtils;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import org.h2.util.MathUtils;
 
 /**
  * Base implementation of the ENUM data type.

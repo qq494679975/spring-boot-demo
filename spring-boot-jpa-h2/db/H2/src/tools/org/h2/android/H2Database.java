@@ -5,23 +5,20 @@
  */
 package org.h2.android;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Map;
+import android.content.ContentValues;
+import android.database.Cursor;
 import org.h2.command.Prepared;
 import org.h2.engine.ConnectionInfo;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
 import org.h2.expression.Parameter;
 import org.h2.result.ResultInterface;
-import org.h2.value.Value;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueString;
-import android.content.ContentValues;
-import android.database.Cursor;
+import org.h2.value.*;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * This class represents a database connection.

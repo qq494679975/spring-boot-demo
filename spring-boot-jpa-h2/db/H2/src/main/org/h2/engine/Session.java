@@ -5,14 +5,6 @@
  */
 package org.h2.engine;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
 import org.h2.api.ErrorCode;
 import org.h2.command.Command;
 import org.h2.command.CommandInterface;
@@ -44,11 +36,10 @@ import org.h2.table.TableFilter;
 import org.h2.table.TableType;
 import org.h2.util.New;
 import org.h2.util.SmallLRUCache;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueString;
+import org.h2.value.*;
+
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A session represents an embedded database connection. When using the server

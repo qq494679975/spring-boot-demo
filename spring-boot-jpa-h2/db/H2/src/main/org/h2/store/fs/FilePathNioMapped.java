@@ -5,6 +5,8 @@
  */
 package org.h2.store.fs;
 
+import org.h2.engine.SysProperties;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -17,8 +19,6 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.nio.channels.NonWritableChannelException;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.engine.SysProperties;
 
 /**
  * This file system stores files on disk and uses java.nio to access the files.

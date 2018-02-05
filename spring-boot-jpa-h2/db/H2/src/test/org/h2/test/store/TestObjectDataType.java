@@ -5,6 +5,10 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.WriteBuffer;
+import org.h2.mvstore.type.ObjectDataType;
+import org.h2.test.TestBase;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
@@ -12,10 +16,6 @@ import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.UUID;
-
-import org.h2.mvstore.WriteBuffer;
-import org.h2.mvstore.type.ObjectDataType;
-import org.h2.test.TestBase;
 
 /**
  * Test the ObjectType class.

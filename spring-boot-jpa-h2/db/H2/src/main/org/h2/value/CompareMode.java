@@ -5,11 +5,11 @@
  */
 package org.h2.value;
 
-import java.text.Collator;
-import java.util.Locale;
-
 import org.h2.engine.SysProperties;
 import org.h2.util.StringUtils;
+
+import java.text.Collator;
+import java.util.Locale;
 
 /**
  * Instances of this class can compare strings. Case sensitive and case

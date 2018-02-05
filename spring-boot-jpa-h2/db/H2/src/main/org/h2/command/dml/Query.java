@@ -5,19 +5,11 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-
 import org.h2.api.ErrorCode;
 import org.h2.command.Prepared;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
-import org.h2.expression.Alias;
-import org.h2.expression.Expression;
-import org.h2.expression.ExpressionColumn;
-import org.h2.expression.ExpressionVisitor;
-import org.h2.expression.Parameter;
-import org.h2.expression.ValueExpression;
+import org.h2.expression.*;
 import org.h2.message.DbException;
 import org.h2.result.ResultInterface;
 import org.h2.result.ResultTarget;
@@ -29,6 +21,9 @@ import org.h2.util.New;
 import org.h2.value.Value;
 import org.h2.value.ValueInt;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * Represents a SELECT statement (simple, or union).

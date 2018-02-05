@@ -5,11 +5,12 @@
  */
 package org.h2.util;
 
+import org.h2.message.DbException;
+
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
-import org.h2.message.DbException;
 
 /**
  * Single threaded lazy future.

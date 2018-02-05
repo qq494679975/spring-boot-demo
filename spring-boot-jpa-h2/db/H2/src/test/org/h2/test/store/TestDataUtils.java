@@ -5,17 +5,17 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.Chunk;
+import org.h2.mvstore.DataUtils;
+import org.h2.mvstore.WriteBuffer;
+import org.h2.test.TestBase;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
-
-import org.h2.mvstore.Chunk;
-import org.h2.mvstore.DataUtils;
-import org.h2.mvstore.WriteBuffer;
-import org.h2.test.TestBase;
 
 /**
  * Test utility classes.

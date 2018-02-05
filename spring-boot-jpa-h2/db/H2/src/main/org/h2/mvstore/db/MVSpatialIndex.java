@@ -5,17 +5,12 @@
  */
 package org.h2.mvstore.db;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
+import com.vividsolutions.jts.geom.Envelope;
+import com.vividsolutions.jts.geom.Geometry;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
-import org.h2.index.BaseIndex;
-import org.h2.index.Cursor;
-import org.h2.index.IndexType;
-import org.h2.index.SpatialIndex;
-import org.h2.index.SpatialTreeIndex;
+import org.h2.index.*;
 import org.h2.message.DbException;
 import org.h2.mvstore.db.TransactionStore.Transaction;
 import org.h2.mvstore.db.TransactionStore.TransactionMap;
@@ -34,8 +29,10 @@ import org.h2.value.Value;
 import org.h2.value.ValueGeometry;
 import org.h2.value.ValueLong;
 import org.h2.value.ValueNull;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * This is an index based on a MVRTreeMap.

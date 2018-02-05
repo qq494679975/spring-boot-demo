@@ -5,16 +5,16 @@
  */
 package org.h2.test.unit;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.Arrays;
-
 import org.h2.security.BlockCipher;
 import org.h2.security.CipherFactory;
 import org.h2.security.SHA256;
 import org.h2.test.TestBase;
 import org.h2.util.StringUtils;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Arrays;
 
 /**
  * Tests various security primitives.

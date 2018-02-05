@@ -5,9 +5,6 @@
  */
 package org.h2.engine;
 
-import java.io.IOException;
-import java.net.Socket;
-import java.util.ArrayList;
 import org.h2.api.DatabaseEventListener;
 import org.h2.api.ErrorCode;
 import org.h2.api.JavaObjectSerializer;
@@ -24,16 +21,14 @@ import org.h2.store.FileStore;
 import org.h2.store.LobStorageFrontend;
 import org.h2.store.LobStorageInterface;
 import org.h2.store.fs.FileUtils;
-import org.h2.util.JdbcUtils;
-import org.h2.util.MathUtils;
-import org.h2.util.NetUtils;
-import org.h2.util.New;
-import org.h2.util.SmallLRUCache;
-import org.h2.util.StringUtils;
-import org.h2.util.TempFileDeleter;
+import org.h2.util.*;
 import org.h2.value.CompareMode;
 import org.h2.value.Transfer;
 import org.h2.value.Value;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.util.ArrayList;
 
 /**
  * The client side part of a session when using the server mode. This object

@@ -5,7 +5,6 @@
  */
 package org.h2.expression;
 
-import java.util.HashMap;
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
 import org.h2.command.dml.Select;
@@ -23,6 +22,8 @@ import org.h2.table.TableFilter;
 import org.h2.value.Value;
 import org.h2.value.ValueBoolean;
 import org.h2.value.ValueEnum;
+
+import java.util.HashMap;
 
 /**
  * A expression that represents a column of a table or view.

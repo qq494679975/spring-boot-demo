@@ -5,13 +5,14 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
 import org.h2.expression.Expression;
 import org.h2.expression.ExpressionColumn;
 import org.h2.table.Column;
 import org.h2.table.ColumnResolver;
 import org.h2.table.TableFilter;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
 
 /**
  * This class represents a column resolver for the column list of a SELECT

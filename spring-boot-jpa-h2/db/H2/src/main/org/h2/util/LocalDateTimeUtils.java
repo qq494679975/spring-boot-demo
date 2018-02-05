@@ -7,19 +7,15 @@
  */
 package org.h2.util;
 
+import org.h2.api.TimestampWithTimeZone;
+import org.h2.message.DbException;
+import org.h2.value.*;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.Date;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.api.TimestampWithTimeZone;
-import org.h2.message.DbException;
-import org.h2.value.Value;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
-import org.h2.value.ValueTimestampTimeZone;
 
 /**
  * This utility class contains time conversion functions for Java 8

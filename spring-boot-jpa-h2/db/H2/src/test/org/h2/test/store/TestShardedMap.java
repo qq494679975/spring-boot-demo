@@ -5,10 +5,10 @@
  */
 package org.h2.test.store;
 
-import java.util.TreeMap;
-
 import org.h2.dev.cluster.ShardedMap;
 import org.h2.test.TestBase;
+
+import java.util.TreeMap;
 
 /**
  * Test sharded maps.

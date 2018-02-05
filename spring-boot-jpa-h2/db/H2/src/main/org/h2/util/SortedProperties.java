@@ -5,23 +5,11 @@
  */
 package org.h2.util;
 
-import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.Writer;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.TreeMap;
-import java.util.Vector;
 import org.h2.store.fs.FileUtils;
+
+import java.io.*;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * Sorted properties file.

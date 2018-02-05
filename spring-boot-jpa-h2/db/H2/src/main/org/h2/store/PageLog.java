@@ -5,10 +5,6 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import org.h2.api.ErrorCode;
 import org.h2.compress.CompressLZF;
 import org.h2.engine.Session;
@@ -23,6 +19,11 @@ import org.h2.util.IntIntHashMap;
 import org.h2.util.New;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * Transaction log mechanism. The stream contains a list of records. The data

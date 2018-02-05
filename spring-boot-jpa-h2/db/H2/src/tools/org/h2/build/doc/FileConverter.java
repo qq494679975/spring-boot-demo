@@ -5,15 +5,15 @@
  */
 package org.h2.build.doc;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Locale;
-
 import org.h2.build.indexer.HtmlConverter;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.IOUtils;
 import org.h2.util.StringUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Locale;
 
 /**
  * Converts a HTML or Unicode encoded file to UTF-8.

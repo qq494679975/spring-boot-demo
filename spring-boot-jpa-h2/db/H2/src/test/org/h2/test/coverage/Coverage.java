@@ -5,18 +5,11 @@
  */
 package org.h2.test.coverage;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.Writer;
+import org.h2.util.New;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.util.New;
 
 /**
  * Tool to instrument java files with profiler calls. The tool can be used for

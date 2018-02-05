@@ -5,15 +5,15 @@
  */
 package org.h2.dev.util;
 
+import org.h2.message.DbException;
+import org.h2.util.Tool;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.message.DbException;
-import org.h2.util.Tool;
 
 /**
  * A text file viewer that support very large files.

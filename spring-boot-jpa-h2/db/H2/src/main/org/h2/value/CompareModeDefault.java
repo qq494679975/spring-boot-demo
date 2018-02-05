@@ -5,12 +5,12 @@
  */
 package org.h2.value;
 
-import java.text.CollationKey;
-import java.text.Collator;
-
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
 import org.h2.util.SmallLRUCache;
+
+import java.text.CollationKey;
+import java.text.Collator;
 
 /**
  * The default implementation of CompareMode. It uses java.text.Collator.

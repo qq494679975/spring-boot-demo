@@ -5,8 +5,6 @@
  */
 package org.h2.mvstore.rtree;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import org.h2.mvstore.CursorPos;
 import org.h2.mvstore.DataUtils;
 import org.h2.mvstore.MVMap;
@@ -14,6 +12,9 @@ import org.h2.mvstore.Page;
 import org.h2.mvstore.type.DataType;
 import org.h2.mvstore.type.ObjectDataType;
 import org.h2.util.New;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * An r-tree implementation. It supports both the linear and the quadratic split

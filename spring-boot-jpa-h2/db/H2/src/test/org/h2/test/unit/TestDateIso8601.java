@@ -5,13 +5,13 @@
  */
 package org.h2.test.unit;
 
+import org.h2.test.TestBase;
+import org.h2.util.DateTimeUtils;
+
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.h2.test.TestBase;
-import org.h2.util.DateTimeUtils;
 
 /**
  * Test cases for DateTimeIso8601Utils.

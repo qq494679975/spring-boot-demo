@@ -5,14 +5,14 @@
  */
 package org.h2.test.unit;
 
+import org.h2.dev.util.ReaderInputStream;
+import org.h2.test.TestBase;
+import org.h2.util.IOUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.Reader;
 import java.io.StringReader;
-
-import org.h2.dev.util.ReaderInputStream;
-import org.h2.test.TestBase;
-import org.h2.util.IOUtils;
 
 /**
  * Tests the stream to UTF-8 reader conversion.

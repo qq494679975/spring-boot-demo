@@ -5,15 +5,11 @@
  */
 package org.h2.test.unit;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
 import org.h2.util.Task;
+
+import java.sql.*;
 
 /**
  * Test concurrent access to JDBC objects.

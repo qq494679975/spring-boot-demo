@@ -5,13 +5,13 @@
  */
 package org.h2.jdbcx;
 
-import java.util.StringTokenizer;
-import javax.transaction.xa.Xid;
-
 import org.h2.api.ErrorCode;
 import org.h2.message.DbException;
 import org.h2.message.TraceObject;
 import org.h2.util.StringUtils;
+
+import javax.transaction.xa.Xid;
+import java.util.StringTokenizer;
 
 /**
  * An object of this class represents a transaction id.

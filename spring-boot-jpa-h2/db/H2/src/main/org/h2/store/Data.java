@@ -8,6 +8,16 @@
  */
 package org.h2.store;
 
+import org.h2.api.ErrorCode;
+import org.h2.engine.Constants;
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.mvstore.DataUtils;
+import org.h2.tools.SimpleResultSet;
+import org.h2.util.DateTimeUtils;
+import org.h2.util.MathUtils;
+import org.h2.value.*;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Reader;
@@ -17,40 +27,6 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import org.h2.api.ErrorCode;
-import org.h2.engine.Constants;
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.mvstore.DataUtils;
-import org.h2.tools.SimpleResultSet;
-import org.h2.util.DateTimeUtils;
-import org.h2.util.MathUtils;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueBoolean;
-import org.h2.value.ValueByte;
-import org.h2.value.ValueBytes;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueDecimal;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueFloat;
-import org.h2.value.ValueGeometry;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueJavaObject;
-import org.h2.value.ValueLob;
-import org.h2.value.ValueLobDb;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueResultSet;
-import org.h2.value.ValueShort;
-import org.h2.value.ValueString;
-import org.h2.value.ValueStringFixed;
-import org.h2.value.ValueStringIgnoreCase;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
-import org.h2.value.ValueTimestampTimeZone;
-import org.h2.value.ValueUuid;
 
 /**
  * This class represents a byte buffer that contains persistent data of a page.

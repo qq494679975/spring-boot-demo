@@ -5,18 +5,13 @@
  */
 package org.h2.samples;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+import org.h2.tools.RunScript;
+import org.h2.util.StringUtils;
+
+import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-
-import org.h2.tools.RunScript;
-import org.h2.util.StringUtils;
 
 /**
  * The newsfeed application uses XML functions to create an RSS and Atom feed

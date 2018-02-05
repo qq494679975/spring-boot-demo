@@ -5,10 +5,11 @@
  */
 package org.h2.message;
 
+import org.h2.util.StringUtils;
+
 import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.Map;
-import org.h2.util.StringUtils;
 
 /**
  * The base class for objects that can print trace information about themselves.

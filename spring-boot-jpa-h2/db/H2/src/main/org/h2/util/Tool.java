@@ -5,16 +5,16 @@
  */
 package org.h2.util;
 
+import org.h2.api.ErrorCode;
+import org.h2.message.DbException;
+import org.h2.store.FileLister;
+import org.h2.store.fs.FileUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.sql.SQLException;
 import java.util.Properties;
-
-import org.h2.api.ErrorCode;
-import org.h2.message.DbException;
-import org.h2.store.FileLister;
-import org.h2.store.fs.FileUtils;
 
 /**
  * Command line tools implement the tool interface so that they can be used in

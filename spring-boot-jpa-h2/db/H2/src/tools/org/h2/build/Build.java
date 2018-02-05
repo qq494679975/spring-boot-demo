@@ -5,6 +5,9 @@
  */
 package org.h2.build;
 
+import org.h2.build.code.SwitchSource;
+import org.h2.build.doc.XMLParser;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
@@ -15,9 +18,6 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.build.code.SwitchSource;
-import org.h2.build.doc.XMLParser;
 
 /**
  * The build definition.

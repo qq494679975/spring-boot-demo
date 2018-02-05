@@ -5,11 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
 import org.h2.command.dml.Query;
 import org.h2.engine.Session;
 import org.h2.expression.Comparison;
@@ -23,6 +18,8 @@ import org.h2.table.TableType;
 import org.h2.util.StatementBuilder;
 import org.h2.value.CompareMode;
 import org.h2.value.Value;
+
+import java.util.*;
 
 /**
  * A index condition object is made for each condition that can potentially use

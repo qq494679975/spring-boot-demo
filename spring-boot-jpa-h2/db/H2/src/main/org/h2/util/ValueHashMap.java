@@ -5,10 +5,11 @@
  */
 package org.h2.util;
 
-import java.util.ArrayList;
 import org.h2.message.DbException;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
 
 /**
  * This hash map supports keys of type Value.

@@ -5,9 +5,9 @@
  */
 package org.h2.engine;
 
-import java.lang.ref.WeakReference;
-
 import org.h2.message.Trace;
+
+import java.lang.ref.WeakReference;
 
 /**
  * This class is responsible to close a database if the application did not

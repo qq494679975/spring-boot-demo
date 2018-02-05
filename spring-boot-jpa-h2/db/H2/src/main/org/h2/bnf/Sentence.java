@@ -5,14 +5,14 @@
  */
 package org.h2.bnf;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.bnf.context.DbSchema;
 import org.h2.bnf.context.DbTableOrView;
 import org.h2.util.New;
 import org.h2.util.StringUtils;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A query context object. It contains the list of table and alias objects.

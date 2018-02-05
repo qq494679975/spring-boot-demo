@@ -5,18 +5,14 @@
  */
 package org.h2.build.indexer;
 
+import org.h2.util.IOUtils;
+import org.h2.util.StringUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.StringTokenizer;
-import org.h2.util.IOUtils;
-import org.h2.util.StringUtils;
+import java.util.*;
 
 /**
  * The indexer creates the fulltext index of the HTML documentation.

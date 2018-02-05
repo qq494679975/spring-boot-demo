@@ -5,11 +5,12 @@
  */
 package org.h2.bnf.context;
 
+import org.h2.util.New;
+
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import org.h2.util.New;
 
 /**
  * Contains meta data information about a table or a view.

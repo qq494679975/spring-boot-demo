@@ -5,16 +5,13 @@
  */
 package org.h2.test.synth;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import org.h2.test.TestBase;
+import org.h2.util.New;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
-import org.h2.test.TestBase;
-import org.h2.util.New;
 
 /**
  * Tests random compare operations.

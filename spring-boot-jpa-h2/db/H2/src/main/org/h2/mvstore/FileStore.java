@@ -5,17 +5,17 @@
  */
 package org.h2.mvstore;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.channels.FileLock;
-import java.nio.channels.OverlappingFileLockException;
-
 import org.h2.mvstore.cache.FilePathCache;
 import org.h2.store.fs.FilePath;
 import org.h2.store.fs.FilePathDisk;
 import org.h2.store.fs.FilePathEncrypt;
 import org.h2.store.fs.FilePathNio;
+
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.nio.channels.OverlappingFileLockException;
 
 /**
  * The default storage mechanism of the MVStore. This implementation persists

@@ -5,16 +5,12 @@
  */
 package org.h2.table;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-
 import org.h2.message.DbException;
 import org.h2.tools.SimpleResultSet;
 import org.h2.util.JdbcUtils;
 import org.h2.util.StringUtils;
+
+import java.sql.*;
 
 /**
  * A utility class to create table links for a whole schema.

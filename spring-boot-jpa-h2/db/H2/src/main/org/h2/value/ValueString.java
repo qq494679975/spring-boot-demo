@@ -5,12 +5,12 @@
  */
 package org.h2.value;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
 import org.h2.engine.SysProperties;
 import org.h2.util.MathUtils;
 import org.h2.util.StringUtils;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Implementation of the VARCHAR data type.

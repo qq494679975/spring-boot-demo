@@ -5,10 +5,11 @@
  */
 package org.h2.java;
 
+import org.h2.test.TestBase;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import org.h2.test.TestBase;
 
 /**
  * A test for the Java parser.

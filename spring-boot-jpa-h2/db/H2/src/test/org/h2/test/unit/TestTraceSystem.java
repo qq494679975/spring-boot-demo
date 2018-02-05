@@ -5,11 +5,12 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import org.h2.message.TraceSystem;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 /**
  * Tests the trace system

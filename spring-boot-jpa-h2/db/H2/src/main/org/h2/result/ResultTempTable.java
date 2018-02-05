@@ -5,8 +5,6 @@
  */
 package org.h2.result;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import org.h2.command.ddl.CreateTableData;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
@@ -21,6 +19,9 @@ import org.h2.table.IndexColumn;
 import org.h2.table.Table;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * This class implements the temp table buffer for the LocalResult class.

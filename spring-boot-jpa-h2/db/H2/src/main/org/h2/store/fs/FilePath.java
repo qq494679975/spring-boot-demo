@@ -5,6 +5,9 @@
  */
 package org.h2.store.fs;
 
+import org.h2.util.MathUtils;
+import org.h2.util.New;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,8 +15,6 @@ import java.nio.channels.FileChannel;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import org.h2.util.MathUtils;
-import org.h2.util.New;
 
 /**
  * A path to a file. It similar to the Java 7 <code>java.nio.file.Path</code>,

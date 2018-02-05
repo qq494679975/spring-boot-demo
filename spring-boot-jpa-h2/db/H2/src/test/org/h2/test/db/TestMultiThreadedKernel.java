@@ -5,17 +5,14 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Random;
 import org.h2.test.TestBase;
 import org.h2.util.JdbcUtils;
 import org.h2.util.New;
 import org.h2.util.Task;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A multi-threaded test case.

@@ -5,14 +5,15 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.ConcurrentArrayList;
+import org.h2.test.TestBase;
+import org.h2.util.Task;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.h2.mvstore.ConcurrentArrayList;
-import org.h2.test.TestBase;
-import org.h2.util.Task;
 
 /**
  * Test the concurrent linked list.

@@ -5,24 +5,15 @@
  */
 package org.h2.dev.ftp;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.net.InetAddress;
-import java.net.Socket;
-
 import org.h2.engine.Constants;
 import org.h2.util.IOUtils;
 import org.h2.util.NetUtils;
 import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.net.InetAddress;
+import java.net.Socket;
 
 /**
  * A simple standalone FTP client.

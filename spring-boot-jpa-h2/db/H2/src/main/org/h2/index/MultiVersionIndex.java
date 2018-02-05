@@ -5,8 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Database;
 import org.h2.engine.DbObject;
@@ -16,13 +14,12 @@ import org.h2.result.Row;
 import org.h2.result.SearchRow;
 import org.h2.result.SortOrder;
 import org.h2.schema.Schema;
-import org.h2.table.Column;
-import org.h2.table.IndexColumn;
-import org.h2.table.RegularTable;
-import org.h2.table.Table;
-import org.h2.table.TableFilter;
+import org.h2.table.*;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * A multi-version index is a combination of a regular index,

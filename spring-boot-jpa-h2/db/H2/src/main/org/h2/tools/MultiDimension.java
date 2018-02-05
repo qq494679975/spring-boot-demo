@@ -5,14 +5,15 @@
  */
 package org.h2.tools;
 
+import org.h2.util.New;
+import org.h2.util.StringUtils;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
 
 /**
  * A tool to help an application execute multi-dimensional range queries.

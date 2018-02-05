@@ -5,10 +5,6 @@
  */
 package org.h2.schema;
 
-import java.lang.reflect.Method;
-import java.sql.Connection;
-import java.sql.SQLException;
-
 import org.h2.api.ErrorCode;
 import org.h2.api.Trigger;
 import org.h2.command.Parser;
@@ -25,6 +21,10 @@ import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
 import org.h2.value.DataType;
 import org.h2.value.Value;
+
+import java.lang.reflect.Method;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  *A trigger is created using the statement

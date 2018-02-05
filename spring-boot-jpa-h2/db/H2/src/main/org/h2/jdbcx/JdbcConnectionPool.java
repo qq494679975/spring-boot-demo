@@ -19,19 +19,16 @@
  */
 package org.h2.jdbcx;
 
+import org.h2.message.DbException;
+import org.h2.util.New;
+
+import javax.sql.*;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
-import javax.sql.ConnectionEvent;
-import javax.sql.ConnectionEventListener;
-import javax.sql.ConnectionPoolDataSource;
-import javax.sql.DataSource;
-import javax.sql.PooledConnection;
-import org.h2.message.DbException;
-import org.h2.util.New;
 
 /**
  * A simple standalone JDBC connection pool.

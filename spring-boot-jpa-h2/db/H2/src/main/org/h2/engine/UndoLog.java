@@ -5,13 +5,14 @@
  */
 package org.h2.engine;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import org.h2.message.DbException;
 import org.h2.store.Data;
 import org.h2.store.FileStore;
 import org.h2.table.Table;
 import org.h2.util.New;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Each session keeps a undo log if rollback is required.

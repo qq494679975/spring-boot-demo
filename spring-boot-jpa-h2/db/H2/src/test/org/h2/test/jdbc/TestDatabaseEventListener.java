@@ -5,16 +5,16 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.Driver;
+import org.h2.api.DatabaseEventListener;
+import org.h2.api.ErrorCode;
+import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
-import org.h2.Driver;
-import org.h2.api.DatabaseEventListener;
-import org.h2.api.ErrorCode;
-import org.h2.test.TestBase;
 
 /**
  * Tests the DatabaseEventListener interface.

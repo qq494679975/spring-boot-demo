@@ -5,18 +5,14 @@
  */
 package org.h2.test.store;
 
+import org.h2.security.AES;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.BitSet;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.h2.security.AES;
 
 /**
  * Calculate the constant for the secondary / supplemental hash function, so

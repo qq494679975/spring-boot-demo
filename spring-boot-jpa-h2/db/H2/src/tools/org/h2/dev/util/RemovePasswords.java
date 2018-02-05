@@ -5,17 +5,17 @@
  */
 package org.h2.dev.util;
 
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel.MapMode;
-
 import org.h2.engine.Constants;
 import org.h2.security.SHA256;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.MathUtils;
 import org.h2.util.StringUtils;
 import org.h2.util.Utils;
+
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel.MapMode;
 
 /**
  * A tool that removes passwords from an unencrypted database.

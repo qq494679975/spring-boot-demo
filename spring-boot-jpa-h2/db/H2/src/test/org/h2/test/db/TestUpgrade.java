@@ -5,18 +5,14 @@
  */
 package org.h2.test.db;
 
-import java.io.OutputStream;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import org.h2.api.ErrorCode;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.upgrade.DbUpgrade;
 import org.h2.util.Utils;
+
+import java.io.OutputStream;
+import java.sql.*;
 
 /**
  * Automatic upgrade test cases.

@@ -5,16 +5,17 @@
  */
 package org.h2.test.unit;
 
-import java.sql.Connection;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 import org.h2.bnf.Bnf;
 import org.h2.bnf.context.DbContents;
 import org.h2.bnf.context.DbContextRule;
 import org.h2.bnf.context.DbProcedure;
 import org.h2.bnf.context.DbSchema;
 import org.h2.test.TestBase;
+
+import java.sql.Connection;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Test Bnf Sql parser

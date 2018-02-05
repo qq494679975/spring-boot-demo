@@ -5,34 +5,21 @@
  */
 package org.h2.test.unit;
 
+import org.h2.api.ErrorCode;
+import org.h2.server.web.DbStarter;
+import org.h2.test.TestBase;
+import org.h2.util.New;
+
+import javax.servlet.*;
+import javax.servlet.FilterRegistration.Dynamic;
+import javax.servlet.descriptor.JspConfigDescriptor;
 import java.io.InputStream;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Enumeration;
-import java.util.EventListener;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import javax.servlet.Filter;
-import javax.servlet.FilterRegistration;
-import javax.servlet.FilterRegistration.Dynamic;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.Servlet;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-import javax.servlet.SessionCookieConfig;
-import javax.servlet.SessionTrackingMode;
-import javax.servlet.descriptor.JspConfigDescriptor;
-import org.h2.api.ErrorCode;
-import org.h2.server.web.DbStarter;
-import org.h2.test.TestBase;
-import org.h2.util.New;
+import java.util.*;
 
 /**
  * Tests the DbStarter servlet.

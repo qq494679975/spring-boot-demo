@@ -5,12 +5,6 @@
  */
 package org.h2.test.unit;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Random;
-
 import org.h2.api.JavaObjectSerializer;
 import org.h2.store.DataHandler;
 import org.h2.store.FileStore;
@@ -24,6 +18,8 @@ import org.h2.value.CompareMode;
 import org.h2.value.Value;
 import org.h2.value.ValueDouble;
 import org.h2.value.ValueInt;
+
+import java.util.*;
 
 /**
  * Tests the value hash map.

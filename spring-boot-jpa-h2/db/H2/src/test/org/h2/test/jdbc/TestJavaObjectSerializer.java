@@ -5,14 +5,11 @@
  */
 package org.h2.test.jdbc;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.sql.Types;
 import org.h2.api.JavaObjectSerializer;
 import org.h2.test.TestBase;
 import org.h2.util.JdbcUtils;
+
+import java.sql.*;
 
 /**
  * Tests {@link JavaObjectSerializer}.

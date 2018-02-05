@@ -5,16 +5,6 @@
  */
 package org.h2.table;
 
-import java.sql.DatabaseMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import org.h2.api.ErrorCode;
 import org.h2.command.Prepared;
 import org.h2.engine.Session;
@@ -31,11 +21,12 @@ import org.h2.util.MathUtils;
 import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
+import org.h2.value.*;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * A linked table contains connection information for a table accessible by

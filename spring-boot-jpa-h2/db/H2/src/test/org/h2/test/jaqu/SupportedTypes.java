@@ -5,13 +5,14 @@
  */
 package org.h2.test.jaqu;
 
+import org.h2.jaqu.Table.JQColumn;
+import org.h2.jaqu.Table.JQTable;
+import org.h2.util.New;
+
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.List;
 import java.util.Random;
-import org.h2.jaqu.Table.JQColumn;
-import org.h2.jaqu.Table.JQTable;
-import org.h2.util.New;
 
 /**
  * A data class that contains a column for each data type.

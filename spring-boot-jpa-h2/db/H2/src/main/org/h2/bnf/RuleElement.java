@@ -5,9 +5,9 @@
  */
 package org.h2.bnf;
 
-import java.util.HashMap;
-
 import org.h2.util.StringUtils;
+
+import java.util.HashMap;
 
 /**
  * A single terminal rule in a BNF object.

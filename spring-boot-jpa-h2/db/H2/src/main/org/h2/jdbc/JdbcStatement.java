@@ -5,12 +5,6 @@
  */
 package org.h2.jdbc;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.SQLWarning;
-import java.sql.Statement;
-import java.util.ArrayList;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.engine.SessionInterface;
@@ -19,6 +13,9 @@ import org.h2.message.DbException;
 import org.h2.message.TraceObject;
 import org.h2.result.ResultInterface;
 import org.h2.util.New;
+
+import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Represents a statement.

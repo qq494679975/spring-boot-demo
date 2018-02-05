@@ -5,12 +5,13 @@
  */
 package org.h2.test.recover;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import org.h2.test.TestBase;
 import org.h2.tools.DeleteDbFiles;
 import org.h2.tools.Recover;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  * Tests BLOB/CLOB recovery.

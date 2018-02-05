@@ -5,15 +5,12 @@
  */
 package org.h2.fulltext;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.HashMap;
-import java.util.HashSet;
 import org.h2.util.New;
 import org.h2.util.SoftHashMap;
+
+import java.sql.*;
+import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * The global settings of a full text search.

@@ -5,7 +5,6 @@
  */
 package org.h2.command.ddl;
 
-import java.util.ArrayList;
 import org.h2.command.CommandInterface;
 import org.h2.command.Prepared;
 import org.h2.engine.Database;
@@ -20,6 +19,8 @@ import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
 import org.h2.value.ValueInt;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
 
 /**
  * This class represents the statements

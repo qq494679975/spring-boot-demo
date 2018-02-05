@@ -5,13 +5,14 @@
  */
 package org.h2.store;
 
-import java.lang.ref.WeakReference;
-import java.security.AccessControlException;
 import org.h2.Driver;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
 import org.h2.message.Trace;
 import org.h2.message.TraceSystem;
+
+import java.lang.ref.WeakReference;
+import java.security.AccessControlException;
 
 /**
  * The writer thread is responsible to flush the transaction transaction log

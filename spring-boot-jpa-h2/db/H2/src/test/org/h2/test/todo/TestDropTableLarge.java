@@ -5,13 +5,10 @@
  */
 package org.h2.test.todo;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
 import org.h2.tools.DeleteDbFiles;
 import org.h2.util.Profiler;
+
+import java.sql.*;
 
 /**
  * Test the performance of dropping large tables

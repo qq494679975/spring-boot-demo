@@ -5,13 +5,6 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.StringReader;
-import java.math.BigDecimal;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.IdentityHashMap;
-import java.util.Random;
 import org.h2.api.JavaObjectSerializer;
 import org.h2.engine.Constants;
 import org.h2.store.DataHandler;
@@ -23,31 +16,15 @@ import org.h2.tools.SimpleResultSet;
 import org.h2.util.SmallLRUCache;
 import org.h2.util.TempFileDeleter;
 import org.h2.util.Utils;
-import org.h2.value.CompareMode;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueBoolean;
-import org.h2.value.ValueByte;
-import org.h2.value.ValueBytes;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueDecimal;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueFloat;
-import org.h2.value.ValueGeometry;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueJavaObject;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueResultSet;
-import org.h2.value.ValueShort;
-import org.h2.value.ValueString;
-import org.h2.value.ValueStringFixed;
-import org.h2.value.ValueStringIgnoreCase;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
-import org.h2.value.ValueTimestampTimeZone;
-import org.h2.value.ValueUuid;
+import org.h2.value.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.StringReader;
+import java.math.BigDecimal;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.IdentityHashMap;
+import java.util.Random;
 
 /**
  * Tests the memory consumption of values. Values can estimate how much memory

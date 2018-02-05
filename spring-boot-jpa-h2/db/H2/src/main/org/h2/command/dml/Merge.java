@@ -5,8 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
-
 import org.h2.api.ErrorCode;
 import org.h2.api.Trigger;
 import org.h2.command.Command;
@@ -26,6 +24,8 @@ import org.h2.table.Table;
 import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
 
 /**
  * This class represents the statement

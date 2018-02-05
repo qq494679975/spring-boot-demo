@@ -5,15 +5,15 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Random;
-
 import org.h2.dev.util.AnsCompression;
 import org.h2.dev.util.BinaryArithmeticStream;
 import org.h2.dev.util.BitStream;
 import org.h2.test.TestBase;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Random;
 
 /**
  * Tests the ANS (Asymmetric Numeral Systems) compression tool.

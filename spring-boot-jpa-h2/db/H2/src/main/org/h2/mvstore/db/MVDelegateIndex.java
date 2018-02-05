@@ -5,8 +5,6 @@
  */
 package org.h2.mvstore.db;
 
-import java.util.HashSet;
-import java.util.List;
 import org.h2.engine.Session;
 import org.h2.index.BaseIndex;
 import org.h2.index.Cursor;
@@ -19,6 +17,9 @@ import org.h2.table.Column;
 import org.h2.table.IndexColumn;
 import org.h2.table.TableFilter;
 import org.h2.value.ValueLong;
+
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * An index that delegates indexing to another index.

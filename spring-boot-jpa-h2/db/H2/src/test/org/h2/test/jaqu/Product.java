@@ -5,13 +5,12 @@
  */
 package org.h2.test.jaqu;
 
-import static org.h2.jaqu.Define.index;
-import static org.h2.jaqu.Define.maxLength;
-import static org.h2.jaqu.Define.primaryKey;
-import static org.h2.jaqu.Define.tableName;
+import org.h2.jaqu.Table;
+
 import java.util.Arrays;
 import java.util.List;
-import org.h2.jaqu.Table;
+
+import static org.h2.jaqu.Define.*;
 
 /**
  * A table containing product data.

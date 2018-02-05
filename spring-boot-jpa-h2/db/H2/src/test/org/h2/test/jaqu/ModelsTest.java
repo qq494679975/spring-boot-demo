@@ -5,17 +5,14 @@
  */
 package org.h2.test.jaqu;
 
+import org.h2.jaqu.*;
+import org.h2.jaqu.Table.JQDatabase;
+import org.h2.test.TestBase;
+import org.h2.test.jaqu.SupportedTypes.SupportedTypes2;
+
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.h2.jaqu.Db;
-import org.h2.jaqu.DbInspector;
-import org.h2.jaqu.DbUpgrader;
-import org.h2.jaqu.DbVersion;
-import org.h2.jaqu.Table.JQDatabase;
-import org.h2.jaqu.ValidationRemark;
-import org.h2.test.TestBase;
-import org.h2.test.jaqu.SupportedTypes.SupportedTypes2;
 
 /**
  * Test that the mapping between classes and tables is done correctly.

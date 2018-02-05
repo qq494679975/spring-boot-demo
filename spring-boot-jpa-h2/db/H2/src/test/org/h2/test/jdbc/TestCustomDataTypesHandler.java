@@ -12,21 +12,10 @@ import org.h2.store.DataHandler;
 import org.h2.test.TestBase;
 import org.h2.util.JdbcUtils;
 import org.h2.util.StringUtils;
-import org.h2.value.CompareMode;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueBytes;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueJavaObject;
-import org.h2.value.ValueString;
+import org.h2.value.*;
 
 import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
+import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.Locale;
 

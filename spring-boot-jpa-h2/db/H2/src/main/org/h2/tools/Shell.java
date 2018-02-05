@@ -5,31 +5,15 @@
  */
 package org.h2.tools;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.io.StringReader;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
+import org.h2.engine.Constants;
+import org.h2.server.web.ConnectionInfo;
+import org.h2.util.*;
+
+import java.io.*;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.engine.Constants;
-import org.h2.server.web.ConnectionInfo;
-import org.h2.util.JdbcUtils;
-import org.h2.util.New;
-import org.h2.util.ScriptReader;
-import org.h2.util.SortedProperties;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
-import org.h2.util.Utils;
 
 /**
  * Interactive command line tool to access a database using JDBC.

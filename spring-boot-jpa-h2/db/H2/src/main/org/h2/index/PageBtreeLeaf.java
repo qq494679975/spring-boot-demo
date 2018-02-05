@@ -5,7 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.Arrays;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Session;
@@ -15,6 +14,8 @@ import org.h2.result.SearchRow;
 import org.h2.store.Data;
 import org.h2.store.Page;
 import org.h2.store.PageStore;
+
+import java.util.Arrays;
 
 /**
  * A b-tree leaf page that contains index data. Format:

@@ -5,11 +5,12 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.h2.test.TestBase;
 
 /**
  * Test for limit updates.

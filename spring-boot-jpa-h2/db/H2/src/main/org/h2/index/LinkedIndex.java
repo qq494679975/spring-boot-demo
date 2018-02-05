@@ -5,10 +5,6 @@
  */
 package org.h2.index;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.HashSet;
 import org.h2.engine.Constants;
 import org.h2.engine.Session;
 import org.h2.message.DbException;
@@ -23,6 +19,11 @@ import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * A linked index is a index for a linked (remote) table.

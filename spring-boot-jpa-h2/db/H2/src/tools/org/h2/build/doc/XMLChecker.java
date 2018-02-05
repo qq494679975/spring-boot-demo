@@ -5,11 +5,11 @@
  */
 package org.h2.build.doc;
 
+import org.h2.util.IOUtils;
+
 import java.io.File;
 import java.io.FileReader;
 import java.util.Stack;
-
-import org.h2.util.IOUtils;
 
 /**
  * This class checks that the HTML and XML part of the source code

@@ -5,23 +5,20 @@
  */
 package org.h2.test.synth;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Random;
 import org.h2.test.TestAll;
 import org.h2.test.TestBase;
 import org.h2.test.utils.SelfDestructor;
 import org.h2.tools.Backup;
 import org.h2.tools.DeleteDbFiles;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
 
 /**
  * Tests database recovery by destroying a process that writes to the database.

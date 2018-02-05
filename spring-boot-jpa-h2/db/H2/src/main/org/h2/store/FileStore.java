@@ -5,17 +5,18 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.lang.ref.Reference;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.util.Arrays;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
 import org.h2.security.SecureFileStore;
 import org.h2.store.fs.FileUtils;
+
+import java.io.IOException;
+import java.lang.ref.Reference;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.util.Arrays;
 
 /**
  * This class is an abstraction of a random access file.

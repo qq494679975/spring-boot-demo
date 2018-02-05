@@ -5,8 +5,9 @@
  */
 package org.h2.value;
 
-import java.util.concurrent.ConcurrentHashMap;
 import org.h2.util.StringUtils;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A concurrent hash map with a case-insensitive string key, that also allows

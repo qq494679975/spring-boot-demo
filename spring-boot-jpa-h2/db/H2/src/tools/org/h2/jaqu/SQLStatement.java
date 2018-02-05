@@ -5,11 +5,12 @@
  */
 package org.h2.jaqu;
 
+import org.h2.util.JdbcUtils;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import org.h2.util.JdbcUtils;
 
 /**
  * This class represents a parameterized SQL statement.

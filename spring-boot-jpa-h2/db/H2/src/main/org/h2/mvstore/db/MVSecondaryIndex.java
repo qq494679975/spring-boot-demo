@@ -5,12 +5,6 @@
  */
 package org.h2.mvstore.db;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeSet;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
@@ -28,11 +22,9 @@ import org.h2.table.Column;
 import org.h2.table.IndexColumn;
 import org.h2.table.TableFilter;
 import org.h2.util.New;
-import org.h2.value.CompareMode;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
+import org.h2.value.*;
+
+import java.util.*;
 
 /**
  * A table stored in a MVStore.

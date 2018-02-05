@@ -5,8 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import org.h2.api.ErrorCode;
 import org.h2.api.Trigger;
 import org.h2.command.CommandInterface;
@@ -30,6 +28,9 @@ import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * This class represents the statement

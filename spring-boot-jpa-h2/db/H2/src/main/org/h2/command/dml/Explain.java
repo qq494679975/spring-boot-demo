@@ -5,9 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.Map.Entry;
 import org.h2.command.CommandInterface;
 import org.h2.command.Prepared;
 import org.h2.engine.Database;
@@ -21,6 +18,10 @@ import org.h2.store.PageStore;
 import org.h2.table.Column;
 import org.h2.value.Value;
 import org.h2.value.ValueString;
+
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 /**
  * This class represents the statement

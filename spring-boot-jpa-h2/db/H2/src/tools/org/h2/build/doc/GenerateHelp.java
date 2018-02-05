@@ -5,13 +5,14 @@
  */
 package org.h2.build.doc;
 
+import org.h2.tools.Csv;
+import org.h2.tools.SimpleResultSet;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Types;
-import org.h2.tools.Csv;
-import org.h2.tools.SimpleResultSet;
 
 /**
  * Generates the help.csv file that is included in the jar file.

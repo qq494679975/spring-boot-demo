@@ -5,13 +5,13 @@
  */
 package org.h2.test.synth;
 
+import org.h2.test.TestBase;
+import org.h2.test.synth.sql.RandomGen;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import org.h2.test.TestBase;
-import org.h2.test.synth.sql.RandomGen;
 
 /**
  * A test that runs random operations against a table to test the various index

@@ -5,15 +5,11 @@
  */
 package org.h2.test.synth;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Random;
-
 import org.h2.test.TestBase;
 import org.h2.test.utils.SelfDestructor;
+
+import java.sql.*;
+import java.util.Random;
 
 /**
  * A random recovery test. This test starts a process that executes random

@@ -5,6 +5,14 @@
  */
 package org.h2.tools;
 
+import org.h2.engine.Constants;
+import org.h2.message.DbException;
+import org.h2.security.SHA256;
+import org.h2.store.FileLister;
+import org.h2.store.FileStore;
+import org.h2.store.fs.*;
+import org.h2.util.Tool;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,18 +20,6 @@ import java.nio.channels.FileChannel;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.engine.Constants;
-import org.h2.message.DbException;
-import org.h2.security.SHA256;
-import org.h2.store.FileLister;
-import org.h2.store.FileStore;
-import org.h2.store.fs.FileChannelInputStream;
-import org.h2.store.fs.FileChannelOutputStream;
-import org.h2.store.fs.FilePath;
-import org.h2.store.fs.FilePathEncrypt;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.Tool;
 
 /**
  * Allows changing the database file encryption password or algorithm.

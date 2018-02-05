@@ -5,6 +5,12 @@
  */
 package org.h2.dev.fs;
 
+import org.h2.engine.Constants;
+import org.h2.message.DbException;
+import org.h2.store.fs.*;
+import org.h2.util.IOUtils;
+import org.h2.util.New;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,15 +21,6 @@ import java.nio.channels.FileLock;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
-import org.h2.engine.Constants;
-import org.h2.message.DbException;
-import org.h2.store.fs.FileBase;
-import org.h2.store.fs.FileChannelInputStream;
-import org.h2.store.fs.FilePath;
-import org.h2.store.fs.FilePathDisk;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.New;
 
 /**
  * This is a read-only file system that allows to access databases stored in a

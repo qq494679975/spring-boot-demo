@@ -5,16 +5,16 @@
  */
 package org.h2.test.synth;
 
+import org.h2.store.FileLister;
+import org.h2.test.TestBase;
+import org.h2.test.utils.SelfDestructor;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.store.FileLister;
-import org.h2.test.TestBase;
-import org.h2.test.utils.SelfDestructor;
 
 /**
  * Test application for TestKill.

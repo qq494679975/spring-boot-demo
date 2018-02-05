@@ -5,10 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
 import org.h2.command.Prepared;
@@ -19,19 +15,15 @@ import org.h2.engine.Session;
 import org.h2.expression.Comparison;
 import org.h2.expression.Parameter;
 import org.h2.message.DbException;
-import org.h2.result.LocalResult;
-import org.h2.result.ResultInterface;
-import org.h2.result.Row;
-import org.h2.result.SearchRow;
-import org.h2.result.SortOrder;
-import org.h2.table.Column;
-import org.h2.table.IndexColumn;
-import org.h2.table.JoinBatch;
-import org.h2.table.TableFilter;
-import org.h2.table.TableView;
+import org.h2.result.*;
+import org.h2.table.*;
 import org.h2.util.IntArray;
 import org.h2.util.New;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.concurrent.TimeUnit;
 
 /**
  * This object represents a virtual index for a query.

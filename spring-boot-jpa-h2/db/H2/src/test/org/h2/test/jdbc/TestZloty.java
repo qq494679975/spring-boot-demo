@@ -5,14 +5,14 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.api.ErrorCode;
+import org.h2.test.TestBase;
+
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import org.h2.api.ErrorCode;
-import org.h2.test.TestBase;
 
 /**
  * Tests a custom BigDecimal implementation, as well

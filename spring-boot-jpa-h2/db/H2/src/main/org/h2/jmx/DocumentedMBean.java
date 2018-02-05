@@ -5,15 +5,12 @@
  */
 package org.h2.jmx;
 
+import org.h2.util.Utils;
+
+import javax.management.*;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import javax.management.MBeanAttributeInfo;
-import javax.management.MBeanInfo;
-import javax.management.MBeanOperationInfo;
-import javax.management.NotCompliantMBeanException;
-import javax.management.StandardMBean;
-import org.h2.util.Utils;
 
 /**
  * An MBean that reads the documentation from a resource file.

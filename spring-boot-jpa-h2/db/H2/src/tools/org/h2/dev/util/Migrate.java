@@ -5,21 +5,14 @@
  */
 package org.h2.dev.util;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.RandomAccessFile;
+import org.h2.engine.Constants;
+import org.h2.tools.RunScript;
+
+import java.io.*;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.engine.Constants;
-import org.h2.tools.RunScript;
 
 /**
  * Migrate a H2 database version 1.1.x (page store not enabled) to 1.2.x (page

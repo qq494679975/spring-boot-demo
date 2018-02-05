@@ -5,9 +5,10 @@
  */
 package org.h2.test.jaqu;
 
-import java.util.List;
 import org.h2.jaqu.Db;
 import org.h2.test.TestBase;
+
+import java.util.List;
 
 /**
  * Tests that columns (p.unitsInStock) are not compared by value with the value

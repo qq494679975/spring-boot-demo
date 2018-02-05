@@ -5,23 +5,14 @@
  */
 package org.h2.value;
 
+import com.vividsolutions.jts.geom.*;
+import com.vividsolutions.jts.io.*;
+import org.h2.message.DbException;
+import org.h2.util.StringUtils;
+
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Arrays;
-
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.CoordinateSequenceFilter;
-import com.vividsolutions.jts.geom.PrecisionModel;
-import org.h2.message.DbException;
-import org.h2.util.StringUtils;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.io.ParseException;
-import com.vividsolutions.jts.io.WKBReader;
-import com.vividsolutions.jts.io.WKBWriter;
-import com.vividsolutions.jts.io.WKTReader;
-import com.vividsolutions.jts.io.WKTWriter;
 
 /**
  * Implementation of the GEOMETRY data type.

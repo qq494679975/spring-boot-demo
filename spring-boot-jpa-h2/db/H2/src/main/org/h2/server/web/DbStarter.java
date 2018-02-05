@@ -5,16 +5,15 @@
  */
 package org.h2.server.web;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import org.h2.tools.Server;
+import org.h2.util.StringUtils;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-
-import org.h2.tools.Server;
-import org.h2.util.StringUtils;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
 /**
  * This class can be used to start the H2 TCP server (or other H2 servers, for

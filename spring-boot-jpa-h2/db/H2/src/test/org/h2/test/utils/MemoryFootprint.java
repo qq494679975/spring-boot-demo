@@ -5,14 +5,15 @@
  */
 package org.h2.test.utils;
 
-import java.lang.instrument.Instrumentation;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import org.h2.engine.Constants;
 import org.h2.result.RowImpl;
 import org.h2.store.Data;
 import org.h2.util.Profiler;
 import org.h2.value.Value;
+
+import java.lang.instrument.Instrumentation;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 /**
  * Calculate the memory footprint of various objects.

@@ -5,26 +5,6 @@
  */
 package org.h2.jdbc;
 
-import java.io.InputStream;
-import java.io.Reader;
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.Array;
-import java.sql.Blob;
-import java.sql.CallableStatement;
-import java.sql.Clob;
-import java.sql.Date;
-import java.sql.NClob;
-import java.sql.Ref;
-import java.sql.ResultSetMetaData;
-import java.sql.RowId;
-import java.sql.SQLException;
-import java.sql.SQLXML;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
 import org.h2.api.ErrorCode;
 import org.h2.expression.ParameterInterface;
 import org.h2.message.DbException;
@@ -32,6 +12,15 @@ import org.h2.message.TraceObject;
 import org.h2.util.BitField;
 import org.h2.util.New;
 import org.h2.value.ValueNull;
+
+import java.io.InputStream;
+import java.io.Reader;
+import java.math.BigDecimal;
+import java.net.URL;
+import java.sql.*;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Represents a callable statement.

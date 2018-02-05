@@ -5,21 +5,6 @@
  */
 package org.h2.dev.fs;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.nio.channels.FileChannel;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
 import org.h2.command.dml.BackupCommand;
 import org.h2.engine.Constants;
 import org.h2.engine.SysProperties;
@@ -29,6 +14,15 @@ import org.h2.util.IOUtils;
 import org.h2.util.New;
 import org.h2.util.StringUtils;
 import org.h2.util.Tool;
+
+import java.io.*;
+import java.nio.channels.FileChannel;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
 
 /**
  * A shell tool that allows to list and manipulate files.

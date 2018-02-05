@@ -5,13 +5,7 @@
  */
 package org.h2.dev.cache;
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * A scan resistant cache. It is meant to cache objects that are relatively

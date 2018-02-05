@@ -5,24 +5,14 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.api.ErrorCode;
+import org.h2.test.TestBase;
+
 import java.io.ByteArrayInputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.math.BigDecimal;
-import java.sql.Blob;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.sql.Types;
-
-import org.h2.api.ErrorCode;
-import org.h2.test.TestBase;
+import java.sql.*;
 
 /**
  * Updatable result set tests.

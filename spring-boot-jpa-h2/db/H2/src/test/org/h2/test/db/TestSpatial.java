@@ -5,13 +5,10 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.Random;
+import com.vividsolutions.jts.geom.*;
+import com.vividsolutions.jts.geom.util.AffineTransformation;
+import com.vividsolutions.jts.io.ParseException;
+import com.vividsolutions.jts.io.WKTReader;
 import org.h2.api.Aggregate;
 import org.h2.test.TestBase;
 import org.h2.tools.SimpleResultSet;
@@ -19,15 +16,9 @@ import org.h2.tools.SimpleRowSource;
 import org.h2.value.DataType;
 import org.h2.value.Value;
 import org.h2.value.ValueGeometry;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.util.AffineTransformation;
-import com.vividsolutions.jts.io.ParseException;
-import com.vividsolutions.jts.io.WKTReader;
+
+import java.sql.*;
+import java.util.Random;
 
 /**
  * Spatial datatype and index tests.

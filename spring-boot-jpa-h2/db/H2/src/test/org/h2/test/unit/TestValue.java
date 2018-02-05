@@ -5,33 +5,16 @@
  */
 package org.h2.test.unit;
 
-import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Time;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.UUID;
 import org.h2.api.ErrorCode;
 import org.h2.message.DbException;
 import org.h2.test.TestBase;
 import org.h2.test.utils.AssertThrows;
 import org.h2.tools.SimpleResultSet;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueBytes;
-import org.h2.value.ValueDecimal;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueFloat;
-import org.h2.value.ValueJavaObject;
-import org.h2.value.ValueLobDb;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueResultSet;
-import org.h2.value.ValueString;
-import org.h2.value.ValueUuid;
+import org.h2.value.*;
+
+import java.math.BigDecimal;
+import java.sql.*;
+import java.util.UUID;
 
 /**
  * Tests features of values.

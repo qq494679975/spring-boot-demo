@@ -5,24 +5,15 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Random;
-
 import org.h2.message.Trace;
 import org.h2.test.TestBase;
-import org.h2.util.Cache;
-import org.h2.util.CacheLRU;
-import org.h2.util.CacheObject;
-import org.h2.util.CacheWriter;
-import org.h2.util.StringUtils;
-import org.h2.util.Utils;
+import org.h2.util.*;
 import org.h2.value.Value;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.sql.*;
+import java.util.Random;
 
 /**
  * Tests the cache.

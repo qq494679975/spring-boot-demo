@@ -5,14 +5,13 @@
  */
 package org.h2.store.fs;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.RandomAccessFile;
+import org.h2.api.ErrorCode;
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.util.IOUtils;
+import org.h2.util.New;
+
+import java.io.*;
 import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -20,12 +19,6 @@ import java.nio.channels.FileLock;
 import java.nio.channels.NonWritableChannelException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.h2.api.ErrorCode;
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.util.IOUtils;
-import org.h2.util.New;
 
 /**
  * This file system stores files on disk.

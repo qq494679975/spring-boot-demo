@@ -5,25 +5,12 @@
  */
 package org.h2.test.unit;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.ParameterMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.Properties;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import org.h2.test.TestBase;
 import org.h2.tools.Server;
+
+import java.sql.*;
+import java.util.Properties;
+import java.util.concurrent.*;
 
 /**
  * Tests the PostgreSQL server protocol compliant implementation.

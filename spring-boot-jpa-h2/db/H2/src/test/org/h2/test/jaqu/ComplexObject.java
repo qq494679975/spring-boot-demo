@@ -5,14 +5,16 @@
  */
 package org.h2.test.jaqu;
 
-import static org.h2.jaqu.Define.primaryKey;
+import org.h2.jaqu.Table;
+
 import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import org.h2.jaqu.Table;
+
+import static org.h2.jaqu.Define.primaryKey;
 
 /**
  * A table containing all possible data types.

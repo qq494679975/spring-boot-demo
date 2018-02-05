@@ -5,6 +5,14 @@
  */
 package org.h2.tools;
 
+import org.h2.command.dml.BackupCommand;
+import org.h2.engine.Constants;
+import org.h2.message.DbException;
+import org.h2.store.FileLister;
+import org.h2.store.fs.FileUtils;
+import org.h2.util.IOUtils;
+import org.h2.util.Tool;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,13 +21,6 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-import org.h2.command.dml.BackupCommand;
-import org.h2.engine.Constants;
-import org.h2.message.DbException;
-import org.h2.store.FileLister;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.Tool;
 
 /**
  * Creates a backup of a database.

@@ -5,14 +5,14 @@
  */
 package org.h2.jdbc;
 
-import java.sql.SQLException;
-import java.sql.Savepoint;
-
 import org.h2.api.ErrorCode;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.message.TraceObject;
 import org.h2.util.StringUtils;
+
+import java.sql.SQLException;
+import java.sql.Savepoint;
 
 /**
  * A savepoint is a point inside a transaction to where a transaction can be

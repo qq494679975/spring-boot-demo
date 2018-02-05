@@ -5,13 +5,6 @@
  */
 package org.h2.upgrade;
 
-import java.io.File;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Properties;
-import java.util.UUID;
 import org.h2.engine.ConnectionInfo;
 import org.h2.engine.Constants;
 import org.h2.jdbc.JdbcConnection;
@@ -19,6 +12,14 @@ import org.h2.message.DbException;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.StringUtils;
 import org.h2.util.Utils;
+
+import java.io.File;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+import java.util.UUID;
 
 /**
  * This class starts the conversion from older database versions to the current

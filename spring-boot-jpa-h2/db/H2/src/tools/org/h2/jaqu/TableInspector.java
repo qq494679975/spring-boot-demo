@@ -5,31 +5,22 @@
  */
 package org.h2.jaqu;
 
-import static org.h2.jaqu.ValidationRemark.consider;
-import static org.h2.jaqu.ValidationRemark.error;
-import static org.h2.jaqu.ValidationRemark.warn;
-import java.lang.reflect.Modifier;
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import org.h2.jaqu.Table.IndexType;
-import org.h2.jaqu.Table.JQColumn;
-import org.h2.jaqu.Table.JQIndex;
-import org.h2.jaqu.Table.JQSchema;
-import org.h2.jaqu.Table.JQTable;
+import org.h2.jaqu.Table.*;
 import org.h2.jaqu.TableDefinition.FieldDefinition;
 import org.h2.jaqu.TableDefinition.IndexDefinition;
 import org.h2.util.JdbcUtils;
 import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
+
+import java.lang.reflect.Modifier;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.MessageFormat;
+import java.util.*;
+
+import static org.h2.jaqu.ValidationRemark.*;
 
 /**
  * Class to inspect the contents of a particular table including its indexes.

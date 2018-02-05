@@ -5,17 +5,14 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import org.h2.api.Trigger;
 import org.h2.test.TestBase;
 import org.h2.util.Task;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Tests the sequence feature of this database.

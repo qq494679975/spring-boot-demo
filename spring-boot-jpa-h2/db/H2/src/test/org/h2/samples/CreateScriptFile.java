@@ -5,17 +5,6 @@
  */
 package org.h2.samples;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import org.h2.engine.Constants;
 import org.h2.security.SHA256;
 import org.h2.store.FileStore;
@@ -25,6 +14,10 @@ import org.h2.store.fs.FileUtils;
 import org.h2.tools.CompressTool;
 import org.h2.tools.RunScript;
 import org.h2.tools.Script;
+
+import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 /**
  * This sample application shows how to manually

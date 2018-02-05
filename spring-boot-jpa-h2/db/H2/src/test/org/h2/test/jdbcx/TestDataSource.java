@@ -5,11 +5,12 @@
  */
 package org.h2.test.jdbcx;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import org.h2.jdbcx.JdbcDataSource;
+import org.h2.jdbcx.JdbcDataSourceFactory;
+import org.h2.jdbcx.JdbcXAConnection;
+import org.h2.message.TraceSystem;
+import org.h2.test.TestBase;
+
 import javax.naming.Reference;
 import javax.naming.StringRefAddr;
 import javax.naming.spi.ObjectFactory;
@@ -18,11 +19,11 @@ import javax.sql.ConnectionEventListener;
 import javax.sql.XAConnection;
 import javax.transaction.xa.XAResource;
 import javax.transaction.xa.Xid;
-import org.h2.jdbcx.JdbcDataSource;
-import org.h2.jdbcx.JdbcDataSourceFactory;
-import org.h2.jdbcx.JdbcXAConnection;
-import org.h2.message.TraceSystem;
-import org.h2.test.TestBase;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Tests DataSource and XAConnection.

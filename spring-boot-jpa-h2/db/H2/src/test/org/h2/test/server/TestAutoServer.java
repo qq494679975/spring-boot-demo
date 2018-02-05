@@ -5,12 +5,13 @@
  */
 package org.h2.test.server;
 
+import org.h2.test.TestBase;
+import org.h2.util.SortedProperties;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import org.h2.test.TestBase;
-import org.h2.util.SortedProperties;
 
 /**
  * Tests automatic embedded/server mode.

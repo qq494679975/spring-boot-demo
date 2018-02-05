@@ -5,14 +5,14 @@
  */
 package org.h2.test.store;
 
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.h2.mvstore.MVMap;
 import org.h2.mvstore.MVStore;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.util.Task;
+
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Tests the MVStore cache.

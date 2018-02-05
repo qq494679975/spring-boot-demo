@@ -5,10 +5,10 @@
  */
 package android.test;
 
-import org.h2.android.H2Database;
-import org.h2.android.H2Utils;
 import android.app.Activity;
 import android.database.Cursor;
+import org.h2.android.H2Database;
+import org.h2.android.H2Utils;
 
 /**
  * Tests the Android API.

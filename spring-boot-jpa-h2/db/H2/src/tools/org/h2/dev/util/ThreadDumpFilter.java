@@ -5,12 +5,7 @@
  */
 package org.h2.dev.util;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.LineNumberReader;
-import java.io.PrintWriter;
+import java.io.*;
 
 /**
  * Filter full thread dumps from a log file.

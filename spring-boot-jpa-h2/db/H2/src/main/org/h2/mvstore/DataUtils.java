@@ -5,6 +5,9 @@
  */
 package org.h2.mvstore;
 
+import org.h2.engine.Constants;
+import org.h2.util.New;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -12,14 +15,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.ConcurrentModificationException;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.h2.engine.Constants;
-import org.h2.util.New;
+import java.util.*;
 
 /**
  * Utility methods

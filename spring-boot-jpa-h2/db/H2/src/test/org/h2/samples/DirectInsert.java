@@ -5,14 +5,10 @@
  */
 package org.h2.samples;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.tools.DeleteDbFiles;
+
+import java.sql.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Demonstrates the benefit of using the CREATE TABLE ... AS SELECT

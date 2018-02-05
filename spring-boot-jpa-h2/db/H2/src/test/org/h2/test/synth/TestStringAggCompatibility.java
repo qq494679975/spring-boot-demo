@@ -5,11 +5,12 @@
  */
 package org.h2.test.synth;
 
+import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.h2.test.TestBase;
 
 /**
  * Test for check compatibility with PostgreSQL function string_agg()

@@ -5,12 +5,13 @@
  */
 package org.h2.samples;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
 import org.h2.store.fs.FileUtils;
 import org.h2.tools.Backup;
 import org.h2.tools.DeleteDbFiles;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 
 /**
  * This sample application shows how to create and use a read-only database in a

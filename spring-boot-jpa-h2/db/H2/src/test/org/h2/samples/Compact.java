@@ -5,15 +5,15 @@
  */
 package org.h2.samples;
 
+import org.h2.store.fs.FileUtils;
+import org.h2.tools.DeleteDbFiles;
+import org.h2.tools.RunScript;
+import org.h2.tools.Script;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import org.h2.store.fs.FileUtils;
-import org.h2.tools.Script;
-import org.h2.tools.DeleteDbFiles;
-import org.h2.tools.RunScript;
 
 /**
  * This sample application shows how to compact the database files.

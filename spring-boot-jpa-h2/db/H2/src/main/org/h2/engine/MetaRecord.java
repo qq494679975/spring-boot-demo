@@ -5,7 +5,6 @@
  */
 package org.h2.engine;
 
-import java.sql.SQLException;
 import org.h2.api.DatabaseEventListener;
 import org.h2.command.Prepared;
 import org.h2.message.DbException;
@@ -13,6 +12,8 @@ import org.h2.message.Trace;
 import org.h2.result.SearchRow;
 import org.h2.value.ValueInt;
 import org.h2.value.ValueString;
+
+import java.sql.SQLException;
 
 /**
  * A record in the system table of the database.

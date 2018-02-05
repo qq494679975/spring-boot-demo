@@ -5,13 +5,13 @@
  */
 package org.h2.test.store;
 
+import org.h2.dev.util.ImmutableArray2;
+import org.h2.test.TestBase;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.dev.util.ImmutableArray2;
-import org.h2.test.TestBase;
 
 /**
  * Test the concurrent linked list.

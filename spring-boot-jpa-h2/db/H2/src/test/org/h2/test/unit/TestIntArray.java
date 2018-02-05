@@ -5,9 +5,10 @@
  */
 package org.h2.test.unit;
 
-import java.util.Random;
 import org.h2.test.TestBase;
 import org.h2.util.IntArray;
+
+import java.util.Random;
 
 /**
  * Tests the IntArray class.

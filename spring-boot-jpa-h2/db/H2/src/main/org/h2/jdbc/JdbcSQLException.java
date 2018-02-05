@@ -5,11 +5,11 @@
  */
 package org.h2.jdbc;
 
+import org.h2.engine.Constants;
+
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.sql.SQLException;
-
-import org.h2.engine.Constants;
 
 /**
  * Represents a database exception.

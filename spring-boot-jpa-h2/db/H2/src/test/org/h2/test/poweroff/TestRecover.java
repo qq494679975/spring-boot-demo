@@ -5,21 +5,12 @@
  */
 package org.h2.test.poweroff;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import org.h2.util.IOUtils;
+import org.h2.util.New;
+
+import java.io.*;
 import java.security.SecureRandom;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -27,8 +18,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-import org.h2.util.IOUtils;
-import org.h2.util.New;
 
 /**
  * This standalone test checks if recovery of a database works after power

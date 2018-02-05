@@ -5,16 +5,13 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Random;
 import org.h2.compress.LZFInputStream;
 import org.h2.compress.LZFOutputStream;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
+
+import java.io.*;
+import java.util.Random;
 
 /**
  * Tests the LZF stream.

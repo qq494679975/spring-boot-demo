@@ -5,7 +5,6 @@
  */
 package org.h2.engine;
 
-import java.util.HashMap;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.command.Parser;
@@ -13,11 +12,9 @@ import org.h2.command.dml.SetTypes;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.store.FileLock;
-import org.h2.util.MathUtils;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
-import org.h2.util.ThreadDeadlockDetector;
-import org.h2.util.Utils;
+import org.h2.util.*;
+
+import java.util.HashMap;
 
 /**
  * The engine contains a map of all open databases.

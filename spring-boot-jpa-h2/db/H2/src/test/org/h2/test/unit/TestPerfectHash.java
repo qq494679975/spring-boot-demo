@@ -5,6 +5,13 @@
  */
 package org.h2.test.unit;
 
+import org.h2.dev.hash.MinimalPerfectHash;
+import org.h2.dev.hash.MinimalPerfectHash.LongHash;
+import org.h2.dev.hash.MinimalPerfectHash.StringHash;
+import org.h2.dev.hash.MinimalPerfectHash.UniversalHash;
+import org.h2.dev.hash.PerfectHash;
+import org.h2.test.TestBase;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -13,13 +20,6 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.h2.dev.hash.MinimalPerfectHash;
-import org.h2.dev.hash.MinimalPerfectHash.LongHash;
-import org.h2.dev.hash.MinimalPerfectHash.StringHash;
-import org.h2.dev.hash.MinimalPerfectHash.UniversalHash;
-import org.h2.dev.hash.PerfectHash;
-import org.h2.test.TestBase;
 
 /**
  * Tests the perfect hash tool.

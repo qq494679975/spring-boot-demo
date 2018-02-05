@@ -5,29 +5,20 @@
  */
 package org.h2.value;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import org.h2.engine.Constants;
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
 import org.h2.mvstore.DataUtils;
-import org.h2.store.DataHandler;
-import org.h2.store.FileStore;
-import org.h2.store.FileStoreInputStream;
-import org.h2.store.FileStoreOutputStream;
-import org.h2.store.LobStorageFrontend;
-import org.h2.store.LobStorageInterface;
+import org.h2.store.*;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.IOUtils;
 import org.h2.util.MathUtils;
 import org.h2.util.StringUtils;
 import org.h2.util.Utils;
+
+import java.io.*;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * A implementation of the BLOB and CLOB data types.

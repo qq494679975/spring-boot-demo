@@ -5,6 +5,12 @@
  */
 package org.h2.test.jdbcx;
 
+import org.h2.jdbcx.JdbcConnectionPool;
+import org.h2.jdbcx.JdbcDataSource;
+import org.h2.test.TestBase;
+import org.h2.util.Task;
+
+import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.sql.Connection;
@@ -12,13 +18,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.concurrent.TimeUnit;
-
-import javax.sql.DataSource;
-
-import org.h2.jdbcx.JdbcConnectionPool;
-import org.h2.jdbcx.JdbcDataSource;
-import org.h2.test.TestBase;
-import org.h2.util.Task;
 
 /**
  * This class tests the JdbcConnectionPool.

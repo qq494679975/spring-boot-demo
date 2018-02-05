@@ -5,10 +5,11 @@
  */
 package org.h2.value;
 
-import java.util.Locale;
 import org.h2.api.ErrorCode;
 import org.h2.message.DbException;
 import org.h2.util.MathUtils;
+
+import java.util.Locale;
 
 public class ValueEnum extends ValueEnumBase {
     private static enum Validation {

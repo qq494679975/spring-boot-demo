@@ -5,13 +5,10 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
+
+import java.sql.*;
 
 /**
  * Test ALTER statements.

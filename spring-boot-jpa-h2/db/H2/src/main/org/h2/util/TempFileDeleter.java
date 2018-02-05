@@ -5,14 +5,14 @@
  */
 package org.h2.util;
 
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.store.fs.FileUtils;
+
 import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
 import java.util.HashMap;
-
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.store.fs.FileUtils;
 
 /**
  * This class deletes temporary files when they are not used any longer.

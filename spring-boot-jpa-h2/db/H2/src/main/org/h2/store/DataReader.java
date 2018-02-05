@@ -5,11 +5,12 @@
  */
 package org.h2.store;
 
+import org.h2.util.IOUtils;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
-import org.h2.util.IOUtils;
 
 /**
  * This class is backed by an input stream and supports reading values and

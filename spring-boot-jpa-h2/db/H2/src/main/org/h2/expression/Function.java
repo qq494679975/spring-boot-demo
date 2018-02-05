@@ -5,23 +5,6 @@
  */
 package org.h2.expression;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.TimeZone;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 import org.h2.api.ErrorCode;
 import org.h2.command.Command;
 import org.h2.command.Parser;
@@ -37,39 +20,21 @@ import org.h2.security.BlockCipher;
 import org.h2.security.CipherFactory;
 import org.h2.security.SHA256;
 import org.h2.store.fs.FileUtils;
-import org.h2.table.Column;
-import org.h2.table.ColumnResolver;
-import org.h2.table.LinkSchema;
-import org.h2.table.Table;
-import org.h2.table.TableFilter;
+import org.h2.table.*;
 import org.h2.tools.CompressTool;
 import org.h2.tools.Csv;
-import org.h2.util.AutoCloseInputStream;
-import org.h2.util.DateTimeUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.JdbcUtils;
-import org.h2.util.MathUtils;
-import org.h2.util.New;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
-import org.h2.util.ToChar;
-import org.h2.util.ToDateParser;
-import org.h2.util.Utils;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueBoolean;
-import org.h2.value.ValueBytes;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueResultSet;
-import org.h2.value.ValueString;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
-import org.h2.value.ValueUuid;
+import org.h2.util.*;
+import org.h2.value.*;
+
+import java.io.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * This class implements most built-in functions of this database.

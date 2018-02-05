@@ -5,6 +5,14 @@
  */
 package org.h2.dev.ftp.server;
 
+import org.h2.server.Service;
+import org.h2.store.fs.FileUtils;
+import org.h2.tools.Server;
+import org.h2.util.IOUtils;
+import org.h2.util.NetUtils;
+import org.h2.util.SortedProperties;
+import org.h2.util.Tool;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,13 +25,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Properties;
-import org.h2.server.Service;
-import org.h2.store.fs.FileUtils;
-import org.h2.tools.Server;
-import org.h2.util.IOUtils;
-import org.h2.util.NetUtils;
-import org.h2.util.SortedProperties;
-import org.h2.util.Tool;
 
 /**
  * Small FTP Server. Intended for ad-hoc networks in a secure environment.

@@ -5,17 +5,11 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.io.PrintStream;
 import org.h2.test.TestBase;
 import org.h2.tools.Shell;
 import org.h2.util.Task;
+
+import java.io.*;
 
 /**
  * Test the shell tool.

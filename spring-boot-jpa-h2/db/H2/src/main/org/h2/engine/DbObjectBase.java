@@ -5,10 +5,11 @@
  */
 package org.h2.engine;
 
-import java.util.ArrayList;
 import org.h2.command.Parser;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
+
+import java.util.ArrayList;
 
 /**
  * The base class for all database objects.

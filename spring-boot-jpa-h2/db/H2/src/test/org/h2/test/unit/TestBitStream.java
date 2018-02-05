@@ -5,14 +5,14 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.util.Random;
-
 import org.h2.dev.util.BitStream;
 import org.h2.dev.util.BitStream.In;
 import org.h2.dev.util.BitStream.Out;
 import org.h2.test.TestBase;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.util.Random;
 
 /**
  * Test the bit stream (Golomb code and Huffman code) utility.

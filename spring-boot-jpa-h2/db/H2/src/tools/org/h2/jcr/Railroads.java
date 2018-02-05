@@ -5,16 +5,6 @@
  */
 package org.h2.jcr;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import org.h2.bnf.Bnf;
 import org.h2.build.BuildBase;
 import org.h2.build.doc.BnfRailroad;
@@ -24,6 +14,13 @@ import org.h2.server.web.PageParser;
 import org.h2.tools.Csv;
 import org.h2.util.IOUtils;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * JCR 2.0 / SQL-2 railroad generator.

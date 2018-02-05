@@ -5,13 +5,13 @@
  */
 package org.h2.value;
 
-import java.lang.reflect.Method;
-import java.util.Comparator;
-import java.util.Locale;
-
 import org.h2.message.DbException;
 import org.h2.util.JdbcUtils;
 import org.h2.util.StringUtils;
+
+import java.lang.reflect.Method;
+import java.util.Comparator;
+import java.util.Locale;
 
 /**
  * An implementation of CompareMode that uses the ICU4J Collator.

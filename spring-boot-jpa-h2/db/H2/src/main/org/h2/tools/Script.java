@@ -5,13 +5,14 @@
  */
 package org.h2.tools;
 
+import org.h2.util.JdbcUtils;
+import org.h2.util.StringUtils;
+import org.h2.util.Tool;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import org.h2.util.JdbcUtils;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
 
 /**
  * Creates a SQL script file by extracting the schema and data of a database.

@@ -5,25 +5,18 @@
  */
 package org.h2.jaqu;
 
+import org.h2.jaqu.Table.*;
+import org.h2.jaqu.util.ClassUtils;
+import org.h2.jaqu.util.StatementLogger;
+import org.h2.util.New;
+import org.h2.util.StatementBuilder;
+import org.h2.util.StringUtils;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.IdentityHashMap;
-import java.util.List;
-import java.util.Map;
-import org.h2.jaqu.Table.IndexType;
-import org.h2.jaqu.Table.JQColumn;
-import org.h2.jaqu.Table.JQIndex;
-import org.h2.jaqu.Table.JQSchema;
-import org.h2.jaqu.Table.JQTable;
-import org.h2.jaqu.util.StatementLogger;
-import org.h2.jaqu.util.ClassUtils;
-import org.h2.util.New;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
+import java.util.*;
 
 /**
  * A table definition contains the index definitions of a table, the field

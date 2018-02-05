@@ -5,7 +5,6 @@
  */
 package org.h2.expression;
 
-import java.util.Arrays;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
 import org.h2.engine.SysProperties;
@@ -18,6 +17,8 @@ import org.h2.value.Value;
 import org.h2.value.ValueBoolean;
 import org.h2.value.ValueGeometry;
 import org.h2.value.ValueNull;
+
+import java.util.Arrays;
 
 /**
  * Example comparison expressions are ID=1, NAME=NAME, NAME IS NULL.

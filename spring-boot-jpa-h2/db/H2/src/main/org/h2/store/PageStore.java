@@ -5,13 +5,6 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
-import java.util.zip.CRC32;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.command.ddl.CreateTableData;
@@ -19,43 +12,26 @@ import org.h2.engine.Constants;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
 import org.h2.engine.SysProperties;
-import org.h2.index.Cursor;
-import org.h2.index.Index;
-import org.h2.index.IndexType;
-import org.h2.index.MultiVersionIndex;
-import org.h2.index.PageBtreeIndex;
-import org.h2.index.PageBtreeLeaf;
-import org.h2.index.PageBtreeNode;
-import org.h2.index.PageDataIndex;
-import org.h2.index.PageDataLeaf;
-import org.h2.index.PageDataNode;
-import org.h2.index.PageDataOverflow;
-import org.h2.index.PageDelegateIndex;
-import org.h2.index.PageIndex;
+import org.h2.index.*;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.result.Row;
 import org.h2.schema.Schema;
 import org.h2.store.fs.FileUtils;
-import org.h2.table.Column;
-import org.h2.table.IndexColumn;
-import org.h2.table.RegularTable;
-import org.h2.table.Table;
-import org.h2.table.TableType;
-import org.h2.util.BitField;
-import org.h2.util.Cache;
-import org.h2.util.CacheLRU;
-import org.h2.util.CacheObject;
-import org.h2.util.CacheWriter;
-import org.h2.util.IntArray;
-import org.h2.util.IntIntHashMap;
-import org.h2.util.New;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
+import org.h2.table.*;
+import org.h2.util.*;
 import org.h2.value.CompareMode;
 import org.h2.value.Value;
 import org.h2.value.ValueInt;
 import org.h2.value.ValueString;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
+import java.util.zip.CRC32;
 
 /**
  * This class represents a file that is organized as a number of pages. Page 0

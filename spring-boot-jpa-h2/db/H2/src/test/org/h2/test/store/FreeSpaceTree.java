@@ -5,10 +5,10 @@
  */
 package org.h2.test.store;
 
-import java.util.TreeSet;
-
 import org.h2.mvstore.DataUtils;
 import org.h2.util.MathUtils;
+
+import java.util.TreeSet;
 
 /**
  * A list that maintains ranges of free space (in blocks) in a file.

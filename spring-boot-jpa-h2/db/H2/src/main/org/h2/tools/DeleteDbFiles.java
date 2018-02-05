@@ -5,13 +5,13 @@
  */
 package org.h2.tools;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 import org.h2.engine.Constants;
 import org.h2.store.FileLister;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.Tool;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Deletes all files belonging to a database.

@@ -5,16 +5,12 @@
  */
 package org.h2.test.unit;
 
-import java.util.ArrayList;
-import java.util.BitSet;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.dev.hash.IntPerfectHash;
 import org.h2.dev.hash.IntPerfectHash.BitArray;
 import org.h2.test.TestBase;
+
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Tests the perfect hash tool.

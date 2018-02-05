@@ -5,8 +5,6 @@
  */
 package org.h2.command;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
@@ -16,6 +14,9 @@ import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.result.ResultInterface;
 import org.h2.util.MathUtils;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Represents a SQL statement. This object is only used on the server side.

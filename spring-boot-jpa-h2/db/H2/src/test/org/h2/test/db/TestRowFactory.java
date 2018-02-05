@@ -5,14 +5,15 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.Statement;
-import java.util.concurrent.atomic.AtomicInteger;
 import org.h2.result.Row;
 import org.h2.result.RowFactory;
 import org.h2.result.RowImpl;
 import org.h2.test.TestBase;
 import org.h2.value.Value;
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Test {@link RowFactory} setting.

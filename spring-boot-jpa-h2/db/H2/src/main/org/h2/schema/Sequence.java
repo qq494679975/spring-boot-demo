@@ -5,13 +5,14 @@
  */
 package org.h2.schema;
 
-import java.math.BigInteger;
 import org.h2.api.ErrorCode;
 import org.h2.engine.DbObject;
 import org.h2.engine.Session;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.table.Table;
+
+import java.math.BigInteger;
 
 /**
  * A sequence is created using the statement

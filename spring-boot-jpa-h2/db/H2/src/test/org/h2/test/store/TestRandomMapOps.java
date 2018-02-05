@@ -5,15 +5,16 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.MVMap;
+import org.h2.mvstore.MVStore;
+import org.h2.store.fs.FileUtils;
+import org.h2.test.TestBase;
+
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 import java.util.TreeMap;
-import org.h2.mvstore.MVMap;
-import org.h2.mvstore.MVStore;
-import org.h2.store.fs.FileUtils;
-import org.h2.test.TestBase;
 
 /**
  * Tests the MVStore.

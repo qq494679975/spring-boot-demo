@@ -5,10 +5,11 @@
  */
 package org.h2.index;
 
-import java.util.ArrayList;
 import org.h2.message.DbException;
 import org.h2.result.Row;
 import org.h2.result.SearchRow;
+
+import java.util.ArrayList;
 
 /**
  * An index for a meta data table.

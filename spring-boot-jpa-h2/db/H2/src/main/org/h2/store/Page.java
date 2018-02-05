@@ -5,9 +5,10 @@
  */
 package org.h2.store;
 
-import java.lang.reflect.Array;
 import org.h2.engine.Session;
 import org.h2.util.CacheObject;
+
+import java.lang.reflect.Array;
 
 /**
  * A page. Format:

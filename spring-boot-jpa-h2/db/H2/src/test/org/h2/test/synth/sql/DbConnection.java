@@ -5,14 +5,10 @@
  */
 package org.h2.test.synth.sql;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import org.h2.util.New;
+
+import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Represents a connection to a real database.

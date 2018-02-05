@@ -5,17 +5,17 @@
  */
 package org.h2.test.unit;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Random;
-
 import org.h2.dev.util.BinaryArithmeticStream;
 import org.h2.dev.util.BinaryArithmeticStream.Huffman;
 import org.h2.dev.util.BinaryArithmeticStream.In;
 import org.h2.dev.util.BinaryArithmeticStream.Out;
 import org.h2.dev.util.BitStream;
 import org.h2.test.TestBase;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Random;
 
 /**
  * Test the binary arithmetic stream utility.

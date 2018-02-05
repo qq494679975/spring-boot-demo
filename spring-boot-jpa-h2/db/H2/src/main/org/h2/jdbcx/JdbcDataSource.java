@@ -5,6 +5,15 @@
  */
 package org.h2.jdbcx;
 
+import org.h2.Driver;
+import org.h2.jdbc.JdbcConnection;
+import org.h2.message.TraceObject;
+import org.h2.util.StringUtils;
+
+import javax.naming.Reference;
+import javax.naming.Referenceable;
+import javax.naming.StringRefAddr;
+import javax.sql.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.PrintWriter;
@@ -13,18 +22,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Logger;
-import javax.naming.Reference;
-import javax.naming.Referenceable;
-import javax.naming.StringRefAddr;
-import javax.sql.ConnectionPoolDataSource;
-import javax.sql.DataSource;
-import javax.sql.PooledConnection;
-import javax.sql.XAConnection;
-import javax.sql.XADataSource;
-import org.h2.Driver;
-import org.h2.jdbc.JdbcConnection;
-import org.h2.message.TraceObject;
-import org.h2.util.StringUtils;
 
 /**
  * A data source for H2 database connections. It is a factory for XAConnection

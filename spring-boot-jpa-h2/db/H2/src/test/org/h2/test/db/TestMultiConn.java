@@ -5,13 +5,14 @@
  */
 package org.h2.test.db;
 
+import org.h2.api.DatabaseEventListener;
+import org.h2.test.TestBase;
+import org.h2.util.Task;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import org.h2.api.DatabaseEventListener;
-import org.h2.test.TestBase;
-import org.h2.util.Task;
 
 /**
  * Multi-connection tests.

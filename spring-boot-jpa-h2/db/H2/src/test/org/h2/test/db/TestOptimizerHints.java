@@ -5,13 +5,14 @@
  */
 package org.h2.test.db;
 
+import org.h2.test.TestBase;
+import org.h2.util.StatementBuilder;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Arrays;
-import org.h2.test.TestBase;
-import org.h2.util.StatementBuilder;
 
 /**
  * Test for optimizer hint SET FORCE_JOIN_ORDER.

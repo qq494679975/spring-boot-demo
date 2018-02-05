@@ -5,11 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import org.h2.api.ErrorCode;
 import org.h2.api.JavaObjectSerializer;
 import org.h2.command.Prepared;
@@ -20,17 +15,15 @@ import org.h2.engine.SysProperties;
 import org.h2.expression.Expression;
 import org.h2.message.DbException;
 import org.h2.security.SHA256;
-import org.h2.store.DataHandler;
-import org.h2.store.FileStore;
-import org.h2.store.FileStoreInputStream;
-import org.h2.store.FileStoreOutputStream;
-import org.h2.store.LobStorageBackend;
+import org.h2.store.*;
 import org.h2.store.fs.FileUtils;
 import org.h2.tools.CompressTool;
 import org.h2.util.IOUtils;
 import org.h2.util.SmallLRUCache;
 import org.h2.util.TempFileDeleter;
 import org.h2.value.CompareMode;
+
+import java.io.*;
 
 /**
  * This class is the base for RunScriptCommand and ScriptCommand.

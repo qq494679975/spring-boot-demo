@@ -5,14 +5,10 @@
  */
 package org.h2.test.coverage;
 
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.LineNumberReader;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.util.IOUtils;
+
+import java.io.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * The class used at runtime to measure the code usage and performance.

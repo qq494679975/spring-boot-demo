@@ -5,7 +5,6 @@
  */
 package org.h2.expression;
 
-import java.util.ArrayList;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
 import org.h2.index.IndexCondition;
@@ -15,6 +14,8 @@ import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
 import org.h2.value.ValueBoolean;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
 
 /**
  * An 'in' condition with a list of values, as in WHERE NAME IN(...)

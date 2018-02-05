@@ -5,19 +5,13 @@
  */
 package org.h2.bnf.context;
 
-import java.util.HashMap;
-import java.util.HashSet;
-
-import org.h2.bnf.Bnf;
-import org.h2.bnf.BnfVisitor;
-import org.h2.bnf.Rule;
-import org.h2.bnf.RuleElement;
-import org.h2.bnf.RuleHead;
-import org.h2.bnf.RuleList;
-import org.h2.bnf.Sentence;
+import org.h2.bnf.*;
 import org.h2.command.Parser;
 import org.h2.message.DbException;
 import org.h2.util.StringUtils;
+
+import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * A BNF terminal rule that is linked to the database context information.

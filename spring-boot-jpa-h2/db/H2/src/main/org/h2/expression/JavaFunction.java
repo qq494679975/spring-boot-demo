@@ -12,11 +12,7 @@ import org.h2.engine.Session;
 import org.h2.table.ColumnResolver;
 import org.h2.table.TableFilter;
 import org.h2.util.StatementBuilder;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueArray;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueResultSet;
+import org.h2.value.*;
 
 /**
  * This class wraps a user-defined function.

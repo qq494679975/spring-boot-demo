@@ -5,9 +5,10 @@
  */
 package org.h2.index;
 
+import org.h2.result.SearchRow;
+
 import java.util.List;
 import java.util.concurrent.Future;
-import org.h2.result.SearchRow;
 
 /**
  * Support for asynchronous batched lookups in indexes. The flow is the

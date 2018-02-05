@@ -5,16 +5,17 @@
  */
 package org.h2.jaqu;
 
+import org.h2.jaqu.Table.JQTable;
+import org.h2.util.JdbcUtils;
+import org.h2.util.New;
+import org.h2.util.StringUtils;
+
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
-import org.h2.jaqu.Table.JQTable;
-import org.h2.util.JdbcUtils;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
 
 /**
  * Class to inspect a model and a database for the purposes of model validation

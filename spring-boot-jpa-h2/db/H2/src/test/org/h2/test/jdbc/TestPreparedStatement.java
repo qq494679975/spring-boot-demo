@@ -5,6 +5,12 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.api.ErrorCode;
+import org.h2.api.Trigger;
+import org.h2.test.TestBase;
+import org.h2.util.LocalDateTimeUtils;
+import org.h2.util.Task;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,22 +18,8 @@ import java.io.StringReader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.ParameterMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.RowId;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
-import java.sql.Types;
+import java.sql.*;
 import java.util.UUID;
-import org.h2.api.ErrorCode;
-import org.h2.api.Trigger;
-import org.h2.test.TestBase;
-import org.h2.util.LocalDateTimeUtils;
-import org.h2.util.Task;
 
 /**
  * Tests for the PreparedStatement implementation.

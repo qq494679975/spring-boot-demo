@@ -5,11 +5,12 @@
  */
 package org.h2.index;
 
-import java.util.Iterator;
 import org.h2.engine.Session;
 import org.h2.message.DbException;
 import org.h2.result.Row;
 import org.h2.result.SearchRow;
+
+import java.util.Iterator;
 
 /**
  * The cursor implementation for the page scan index.

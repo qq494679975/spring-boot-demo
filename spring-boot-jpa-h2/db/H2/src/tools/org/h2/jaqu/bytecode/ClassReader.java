@@ -5,6 +5,8 @@
  */
 package org.h2.jaqu.bytecode;
 
+import org.h2.jaqu.Token;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +14,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
-import org.h2.jaqu.Token;
 
 /**
  * This class converts a method to a SQL Token by interpreting

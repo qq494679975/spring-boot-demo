@@ -5,17 +5,16 @@
  */
 package org.h2.jdbcx;
 
-import java.util.Hashtable;
+import org.h2.engine.Constants;
+import org.h2.engine.SysProperties;
+import org.h2.message.Trace;
+import org.h2.message.TraceSystem;
 
 import javax.naming.Context;
 import javax.naming.Name;
 import javax.naming.Reference;
 import javax.naming.spi.ObjectFactory;
-
-import org.h2.engine.Constants;
-import org.h2.engine.SysProperties;
-import org.h2.message.Trace;
-import org.h2.message.TraceSystem;
+import java.util.Hashtable;
 
 /**
  * This class is used to create new DataSource objects.

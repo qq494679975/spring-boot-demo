@@ -5,15 +5,12 @@
  */
 package org.h2.build.doclet;
 
-import java.io.IOException;
+import com.sun.javadoc.*;
 import org.h2.build.doc.XMLParser;
 import org.h2.build.indexer.HtmlConverter;
 import org.h2.util.SortedProperties;
-import com.sun.javadoc.ClassDoc;
-import com.sun.javadoc.Doc;
-import com.sun.javadoc.MethodDoc;
-import com.sun.javadoc.RootDoc;
-import com.sun.javadoc.Tag;
+
+import java.io.IOException;
 
 /**
  * This custom doclet generates resources from javadoc comments.

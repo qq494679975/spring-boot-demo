@@ -5,10 +5,11 @@
  */
 package org.h2.test.todo;
 
+import org.h2.tools.DeleteDbFiles;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
-import org.h2.tools.DeleteDbFiles;
 
 /**
  * The complete condition should be sent to a linked table, not just the index

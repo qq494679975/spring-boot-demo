@@ -5,17 +5,18 @@
  */
 package org.h2.message;
 
+import org.h2.api.ErrorCode;
+import org.h2.engine.Constants;
+import org.h2.jdbc.JdbcSQLException;
+import org.h2.store.fs.FileUtils;
+import org.h2.util.IOUtils;
+
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.Writer;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.atomic.AtomicReferenceArray;
-import org.h2.api.ErrorCode;
-import org.h2.engine.Constants;
-import org.h2.jdbc.JdbcSQLException;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
 
 /**
  * The trace mechanism is the logging facility of this database. There is

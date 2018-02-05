@@ -5,13 +5,13 @@
  */
 package org.h2.build.doc;
 
+import org.h2.engine.Constants;
+import org.h2.util.StringUtils;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-
-import org.h2.engine.Constants;
-import org.h2.util.StringUtils;
 
 /**
  * This application merges the html documentation to one file

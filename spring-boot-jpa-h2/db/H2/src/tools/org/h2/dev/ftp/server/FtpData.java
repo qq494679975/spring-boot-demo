@@ -5,14 +5,15 @@
  */
 package org.h2.dev.ftp.server;
 
+import org.h2.store.fs.FileUtils;
+import org.h2.util.IOUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
 
 /**
  * The implementation of the data channel of the FTP server.

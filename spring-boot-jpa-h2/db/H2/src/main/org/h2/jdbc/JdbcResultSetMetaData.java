@@ -5,14 +5,15 @@
  */
 package org.h2.jdbc;
 
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.message.TraceObject;
 import org.h2.result.ResultInterface;
 import org.h2.util.MathUtils;
 import org.h2.value.DataType;
+
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 
 /**
  * Represents the meta data for a ResultSet.

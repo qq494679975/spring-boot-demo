@@ -5,6 +5,10 @@
  */
 package org.h2.mvstore.type;
 
+import org.h2.mvstore.DataUtils;
+import org.h2.mvstore.WriteBuffer;
+import org.h2.util.New;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
@@ -17,9 +21,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.UUID;
-import org.h2.mvstore.DataUtils;
-import org.h2.mvstore.WriteBuffer;
-import org.h2.util.New;
 
 /**
  * A data type implementation for the most common data types, including

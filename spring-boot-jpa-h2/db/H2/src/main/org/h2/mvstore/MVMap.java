@@ -5,19 +5,12 @@
  */
 package org.h2.mvstore;
 
-import java.util.AbstractList;
-import java.util.AbstractMap;
-import java.util.AbstractSet;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentMap;
-
 import org.h2.mvstore.type.DataType;
 import org.h2.mvstore.type.ObjectDataType;
 import org.h2.util.New;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * A stored map.

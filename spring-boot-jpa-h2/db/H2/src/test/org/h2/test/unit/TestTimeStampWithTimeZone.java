@@ -5,18 +5,13 @@
  */
 package org.h2.test.unit;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import org.h2.api.TimestampWithTimeZone;
 import org.h2.test.TestBase;
 import org.h2.util.LocalDateTimeUtils;
 import org.h2.value.Value;
 import org.h2.value.ValueTimestampTimeZone;
+
+import java.sql.*;
 
 /**
  */

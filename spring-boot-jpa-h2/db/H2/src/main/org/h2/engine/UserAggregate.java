@@ -5,8 +5,6 @@
  */
 package org.h2.engine;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import org.h2.api.Aggregate;
 import org.h2.api.AggregateFunction;
 import org.h2.command.Parser;
@@ -15,6 +13,9 @@ import org.h2.message.Trace;
 import org.h2.table.Table;
 import org.h2.util.JdbcUtils;
 import org.h2.value.DataType;
+
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * Represents a user-defined aggregate function.

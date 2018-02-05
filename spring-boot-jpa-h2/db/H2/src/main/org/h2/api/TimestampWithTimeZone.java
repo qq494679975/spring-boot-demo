@@ -5,9 +5,10 @@
  */
 package org.h2.api;
 
-import java.io.Serializable;
 import org.h2.util.DateTimeUtils;
 import org.h2.util.StringUtils;
+
+import java.io.Serializable;
 
 /**
  * How we expose "TIMESTAMP WITH TIMEZONE" in our ResultSets.

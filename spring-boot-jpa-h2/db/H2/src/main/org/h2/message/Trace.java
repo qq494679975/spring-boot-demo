@@ -5,14 +5,14 @@
  */
 package org.h2.message;
 
-import java.text.MessageFormat;
-import java.util.ArrayList;
-
 import org.h2.engine.SysProperties;
 import org.h2.expression.ParameterInterface;
 import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
 import org.h2.value.Value;
+
+import java.text.MessageFormat;
+import java.util.ArrayList;
 
 /**
  * This class represents a trace module.

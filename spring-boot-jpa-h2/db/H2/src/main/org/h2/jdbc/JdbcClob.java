@@ -5,18 +5,6 @@
  */
 package org.h2.jdbc;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.sql.Clob;
-import java.sql.NClob;
-import java.sql.SQLException;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.message.DbException;
@@ -24,6 +12,11 @@ import org.h2.message.TraceObject;
 import org.h2.util.IOUtils;
 import org.h2.util.Task;
 import org.h2.value.Value;
+
+import java.io.*;
+import java.sql.Clob;
+import java.sql.NClob;
+import java.sql.SQLException;
 
 /**
  * Represents a CLOB value.

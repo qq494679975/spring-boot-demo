@@ -5,15 +5,11 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.DatabaseEventListener;
 import org.h2.test.TestBase;
+
+import java.sql.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Tests the DatabaseEventListener.

@@ -5,8 +5,6 @@
  */
 package org.h2.table;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
 import org.h2.command.dml.Select;
@@ -18,11 +16,7 @@ import org.h2.expression.Comparison;
 import org.h2.expression.ConditionAndOr;
 import org.h2.expression.Expression;
 import org.h2.expression.ExpressionColumn;
-import org.h2.index.Index;
-import org.h2.index.IndexCondition;
-import org.h2.index.IndexCursor;
-import org.h2.index.IndexLookupBatch;
-import org.h2.index.ViewIndex;
+import org.h2.index.*;
 import org.h2.message.DbException;
 import org.h2.result.Row;
 import org.h2.result.SearchRow;
@@ -33,6 +27,9 @@ import org.h2.util.StringUtils;
 import org.h2.value.Value;
 import org.h2.value.ValueLong;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * A table filter represents a table that is used in a query. There is one such

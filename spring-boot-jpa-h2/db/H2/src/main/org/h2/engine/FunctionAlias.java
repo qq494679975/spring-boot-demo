@@ -5,13 +5,6 @@
  */
 package org.h2.engine;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.Arrays;
 import org.h2.Driver;
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
@@ -21,15 +14,19 @@ import org.h2.message.Trace;
 import org.h2.schema.Schema;
 import org.h2.schema.SchemaObjectBase;
 import org.h2.table.Table;
-import org.h2.util.JdbcUtils;
-import org.h2.util.New;
-import org.h2.util.SourceCompiler;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
+import org.h2.util.*;
 import org.h2.value.DataType;
 import org.h2.value.Value;
 import org.h2.value.ValueArray;
 import org.h2.value.ValueNull;
+
+import java.lang.reflect.Array;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Represents a user-defined function, or alias.

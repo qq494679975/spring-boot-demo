@@ -5,19 +5,6 @@
  */
 package org.h2.value;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.Reader;
-import java.math.BigDecimal;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Timestamp;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.SessionInterface;
@@ -27,13 +14,16 @@ import org.h2.security.SHA256;
 import org.h2.store.Data;
 import org.h2.store.DataReader;
 import org.h2.tools.SimpleResultSet;
-import org.h2.util.DateTimeUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.JdbcUtils;
-import org.h2.util.MathUtils;
-import org.h2.util.NetUtils;
-import org.h2.util.StringUtils;
-import org.h2.util.Utils;
+import org.h2.util.*;
+
+import java.io.*;
+import java.math.BigDecimal;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Timestamp;
 
 /**
  * The transfer class is used to send and receive Value objects.

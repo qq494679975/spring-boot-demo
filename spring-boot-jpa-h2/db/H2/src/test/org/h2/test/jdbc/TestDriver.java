@@ -5,14 +5,14 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.Driver;
+import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
-
-import org.h2.Driver;
-import org.h2.test.TestBase;
 
 /**
  * Tests the database driver.

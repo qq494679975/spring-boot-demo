@@ -5,24 +5,6 @@
  */
 package org.h2.test.jdbc;
 
-import java.io.ByteArrayInputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.Array;
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.Ref;
-import java.sql.ResultSet;
-import java.sql.RowId;
-import java.sql.SQLException;
-import java.sql.SQLXML;
-import java.sql.Statement;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.Collections;
-
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
 import org.h2.tools.SimpleResultSet;
@@ -30,6 +12,14 @@ import org.h2.util.IOUtils;
 import org.h2.util.JdbcUtils;
 import org.h2.util.LocalDateTimeUtils;
 import org.h2.util.Utils;
+
+import java.io.ByteArrayInputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.math.BigDecimal;
+import java.net.URL;
+import java.sql.*;
+import java.util.Collections;
 
 /**
  * Tests for the CallableStatement class.

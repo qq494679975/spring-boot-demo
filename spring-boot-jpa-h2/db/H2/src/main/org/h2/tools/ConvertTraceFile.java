@@ -4,6 +4,10 @@
  * Initial Developer: H2 Group
  */
 package org.h2.tools;
+import org.h2.message.DbException;
+import org.h2.store.fs.FileUtils;
+import org.h2.util.*;
+
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.io.PrintWriter;
@@ -12,14 +16,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
-
-import org.h2.message.DbException;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.MathUtils;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
 
 /**
  * Converts a .trace.db file to a SQL script and Java source code.

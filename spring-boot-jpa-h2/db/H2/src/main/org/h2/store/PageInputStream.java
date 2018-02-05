@@ -5,12 +5,13 @@
  */
 package org.h2.store;
 
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
 import org.h2.util.BitField;
+
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * An input stream that reads from a page store.

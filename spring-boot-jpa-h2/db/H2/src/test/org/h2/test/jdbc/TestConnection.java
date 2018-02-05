@@ -7,6 +7,7 @@ package org.h2.test.jdbc;
 
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.SQLClientInfoException;
 import java.sql.SQLException;

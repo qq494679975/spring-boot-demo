@@ -5,15 +5,11 @@
  */
 package org.h2.samples;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.DatabaseEventListener;
 import org.h2.jdbc.JdbcConnection;
+
+import java.sql.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * This example application implements a database event listener. This is useful

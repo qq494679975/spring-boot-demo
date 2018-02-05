@@ -5,10 +5,11 @@
  */
 package org.h2.test.store;
 
-import java.nio.ByteBuffer;
 import org.h2.mvstore.DataUtils;
 import org.h2.mvstore.WriteBuffer;
 import org.h2.mvstore.type.DataType;
+
+import java.nio.ByteBuffer;
 
 /**
  * A row type.

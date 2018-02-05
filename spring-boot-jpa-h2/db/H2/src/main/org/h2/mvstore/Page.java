@@ -5,13 +5,13 @@
  */
 package org.h2.mvstore;
 
-import java.nio.ByteBuffer;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.h2.compress.Compressor;
 import org.h2.mvstore.type.DataType;
 import org.h2.util.New;
+
+import java.nio.ByteBuffer;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A page (a node or a leaf).

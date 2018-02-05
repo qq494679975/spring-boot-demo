@@ -5,6 +5,12 @@
  */
 package org.h2.bnf;
 
+import org.h2.bnf.context.DbContextRule;
+import org.h2.tools.Csv;
+import org.h2.util.New;
+import org.h2.util.StringUtils;
+import org.h2.util.Utils;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,12 +20,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
-
-import org.h2.bnf.context.DbContextRule;
-import org.h2.tools.Csv;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
-import org.h2.util.Utils;
 
 /**
  * This class can read a file that is similar to BNF (Backus-Naur form).

@@ -5,10 +5,10 @@
  */
 package org.h2.mvstore.db;
 
-import java.util.List;
-
 import org.h2.index.Index;
 import org.h2.result.Row;
+
+import java.util.List;
 
 /**
  * An index that stores the data in an MVStore.

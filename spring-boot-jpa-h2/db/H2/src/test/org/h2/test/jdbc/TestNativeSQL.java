@@ -5,14 +5,14 @@
  */
 package org.h2.test.jdbc;
 
+import org.h2.api.ErrorCode;
+import org.h2.test.TestBase;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
-
-import org.h2.api.ErrorCode;
-import org.h2.test.TestBase;
 
 /**
  * Tests the Connection.nativeSQL method.

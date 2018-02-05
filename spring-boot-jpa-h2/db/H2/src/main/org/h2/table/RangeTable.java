@@ -5,7 +5,6 @@
  */
 package org.h2.table;
 
-import java.util.ArrayList;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Session;
 import org.h2.expression.Expression;
@@ -16,6 +15,8 @@ import org.h2.message.DbException;
 import org.h2.result.Row;
 import org.h2.schema.Schema;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
 
 /**
  * The table SYSTEM_RANGE is a virtual table that generates incrementing numbers

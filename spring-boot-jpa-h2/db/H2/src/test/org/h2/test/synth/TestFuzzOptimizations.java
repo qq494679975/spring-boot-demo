@@ -5,6 +5,11 @@
  */
 package org.h2.test.synth;
 
+import org.h2.test.TestBase;
+import org.h2.test.db.Db;
+import org.h2.test.db.Db.Prepared;
+import org.h2.util.New;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,11 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-
-import org.h2.test.TestBase;
-import org.h2.test.db.Db;
-import org.h2.test.db.Db.Prepared;
-import org.h2.util.New;
 
 /**
  * This test executes random SQL statements to test if optimizations are working

@@ -5,9 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.engine.Session;
 import org.h2.expression.Expression;
 import org.h2.table.Plan;
@@ -15,6 +12,9 @@ import org.h2.table.PlanItem;
 import org.h2.table.TableFilter;
 import org.h2.util.BitField;
 import org.h2.util.Permutations;
+
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * The optimizer is responsible to find the best execution plan

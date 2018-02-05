@@ -5,12 +5,9 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import org.h2.test.TestBase;
+
+import java.sql.*;
 
 /**
  * Tests for the ON DUPLICATE KEY UPDATE in the Insert class.

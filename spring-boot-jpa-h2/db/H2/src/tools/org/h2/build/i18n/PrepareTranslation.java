@@ -5,26 +5,15 @@
  */
 package org.h2.build.i18n;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Properties;
-import java.util.Stack;
 import org.h2.build.doc.XMLParser;
 import org.h2.server.web.PageParser;
 import org.h2.util.IOUtils;
 import org.h2.util.New;
 import org.h2.util.SortedProperties;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.util.*;
 
 /**
  * This class updates the translation source code files by parsing

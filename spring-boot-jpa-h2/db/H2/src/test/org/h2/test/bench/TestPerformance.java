@@ -5,22 +5,17 @@
  */
 package org.h2.test.bench;
 
-import java.io.FileWriter;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Properties;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.util.IOUtils;
 import org.h2.util.JdbcUtils;
+
+import java.io.FileWriter;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Properties;
 
 /**
  * The main controller class of the benchmark application.

@@ -5,12 +5,12 @@
  */
 package org.h2.test.store;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.mvstore.FreeSpaceBitSet;
 import org.h2.test.TestBase;
 import org.h2.util.Utils;
+
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Tests the free space list.

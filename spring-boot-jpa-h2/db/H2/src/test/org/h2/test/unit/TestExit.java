@@ -5,15 +5,15 @@
  */
 package org.h2.test.unit;
 
+import org.h2.api.DatabaseEventListener;
+import org.h2.test.TestBase;
+import org.h2.test.utils.SelfDestructor;
+
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import org.h2.api.DatabaseEventListener;
-import org.h2.test.TestBase;
-import org.h2.test.utils.SelfDestructor;
 
 /**
  * Tests the flag db_close_on_exit. A new process is started.

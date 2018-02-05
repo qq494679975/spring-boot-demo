@@ -5,15 +5,9 @@
  */
 package org.h2.dev.util;
 
-import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.Writer;
-
 import org.h2.engine.Constants;
+
+import java.io.*;
 
 /**
  * The reader input stream wraps a reader and convert the character to the UTF-8

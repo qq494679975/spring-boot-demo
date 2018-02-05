@@ -5,23 +5,11 @@
  */
 package org.h2.table;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Map;
 import org.h2.api.ErrorCode;
 import org.h2.command.Prepared;
 import org.h2.command.dml.Query;
-import org.h2.engine.Constants;
-import org.h2.engine.Database;
-import org.h2.engine.DbObject;
-import org.h2.engine.Session;
-import org.h2.engine.User;
-import org.h2.expression.Alias;
-import org.h2.expression.Expression;
-import org.h2.expression.ExpressionColumn;
-import org.h2.expression.ExpressionVisitor;
-import org.h2.expression.Parameter;
+import org.h2.engine.*;
+import org.h2.expression.*;
 import org.h2.index.Index;
 import org.h2.index.IndexType;
 import org.h2.index.ViewIndex;
@@ -34,6 +22,11 @@ import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.util.StringUtils;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Map;
 
 /**
  * A view is a virtual table that is defined by a query.

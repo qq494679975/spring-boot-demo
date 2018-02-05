@@ -5,12 +5,12 @@
  */
 package org.h2.test.synth;
 
+import org.h2.test.utils.SelfDestructor;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import org.h2.test.utils.SelfDestructor;
 
 /**
  * The application code for the {@link TestHalt} application.

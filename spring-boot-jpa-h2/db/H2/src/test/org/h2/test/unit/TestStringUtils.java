@@ -5,16 +5,17 @@
  */
 package org.h2.test.unit;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.util.Date;
-import java.util.Random;
 import org.h2.message.DbException;
 import org.h2.test.TestBase;
 import org.h2.test.utils.AssertThrows;
 import org.h2.util.DateTimeUtils;
 import org.h2.util.StringUtils;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.Date;
+import java.util.Random;
 
 /**
  * Tests string utility methods.

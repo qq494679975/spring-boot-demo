@@ -5,20 +5,16 @@
  */
 package org.h2.util;
 
+import org.h2.api.ErrorCode;
+import org.h2.message.DbException;
+
 import java.math.BigDecimal;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Currency;
-import java.util.GregorianCalendar;
-import java.util.Locale;
-import java.util.TimeZone;
-import org.h2.api.ErrorCode;
-import org.h2.message.DbException;
+import java.util.*;
 
 /**
  * Emulates Oracle's TO_CHAR function.

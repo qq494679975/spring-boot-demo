@@ -5,8 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import org.h2.api.ErrorCode;
 import org.h2.api.Trigger;
 import org.h2.command.Command;
@@ -15,11 +13,7 @@ import org.h2.command.Prepared;
 import org.h2.engine.Right;
 import org.h2.engine.Session;
 import org.h2.engine.UndoLogRecord;
-import org.h2.expression.Comparison;
-import org.h2.expression.ConditionAndOr;
-import org.h2.expression.Expression;
-import org.h2.expression.ExpressionColumn;
-import org.h2.expression.Parameter;
+import org.h2.expression.*;
 import org.h2.index.Index;
 import org.h2.message.DbException;
 import org.h2.mvstore.db.MVPrimaryIndex;
@@ -32,6 +26,9 @@ import org.h2.util.New;
 import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * This class represents the statement

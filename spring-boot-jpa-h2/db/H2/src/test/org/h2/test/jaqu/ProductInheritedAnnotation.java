@@ -5,9 +5,10 @@
  */
 package org.h2.test.jaqu;
 
+import org.h2.jaqu.Table.JQTable;
+
 import java.util.Arrays;
 import java.util.List;
-import org.h2.jaqu.Table.JQTable;
 
 /**
  * This class inherits all its fields from a parent class which has annotated

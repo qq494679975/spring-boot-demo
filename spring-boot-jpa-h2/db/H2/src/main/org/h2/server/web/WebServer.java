@@ -5,6 +5,14 @@
  */
 package org.h2.server.web;
 
+import org.h2.engine.Constants;
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.server.Service;
+import org.h2.server.ShutdownHandler;
+import org.h2.store.fs.FileUtils;
+import org.h2.util.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,31 +22,8 @@ import java.net.Socket;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.Set;
-import java.util.TimeZone;
-
-import org.h2.engine.Constants;
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.server.Service;
-import org.h2.server.ShutdownHandler;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.JdbcUtils;
-import org.h2.util.MathUtils;
-import org.h2.util.NetUtils;
-import org.h2.util.New;
-import org.h2.util.SortedProperties;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
-import org.h2.util.Utils;
 
 /**
  * The web server is a simple standalone HTTP server that implements the H2

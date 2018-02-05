@@ -5,7 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.HashSet;
 import org.h2.engine.Session;
 import org.h2.result.Row;
 import org.h2.result.SearchRow;
@@ -15,6 +14,8 @@ import org.h2.table.Column;
 import org.h2.table.IndexColumn;
 import org.h2.table.Table;
 import org.h2.table.TableFilter;
+
+import java.util.HashSet;
 
 /**
  * An index. Indexes are used to speed up searching data.

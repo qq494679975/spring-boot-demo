@@ -5,10 +5,11 @@
  */
 package org.h2.compress;
 
-import java.io.IOException;
-import java.io.InputStream;
 import org.h2.message.DbException;
 import org.h2.mvstore.DataUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * An input stream to read from an LZF stream.

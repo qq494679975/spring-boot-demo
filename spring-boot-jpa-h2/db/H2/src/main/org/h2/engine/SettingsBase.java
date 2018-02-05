@@ -5,11 +5,11 @@
  */
 package org.h2.engine;
 
-import java.util.HashMap;
-
 import org.h2.api.ErrorCode;
 import org.h2.message.DbException;
 import org.h2.util.Utils;
+
+import java.util.HashMap;
 
 /**
  * The base class for settings.

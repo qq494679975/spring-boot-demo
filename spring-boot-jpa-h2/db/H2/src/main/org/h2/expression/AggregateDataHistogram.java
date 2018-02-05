@@ -5,8 +5,6 @@
  */
 package org.h2.expression;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
 import org.h2.util.ValueHashMap;
@@ -14,6 +12,9 @@ import org.h2.value.CompareMode;
 import org.h2.value.Value;
 import org.h2.value.ValueArray;
 import org.h2.value.ValueLong;
+
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Data stored while calculating a HISTOGRAM aggregate.

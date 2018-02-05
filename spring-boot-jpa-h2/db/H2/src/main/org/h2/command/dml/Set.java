@@ -5,16 +5,11 @@
  */
 package org.h2.command.dml;
 
-import java.text.Collator;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.command.Prepared;
 import org.h2.compress.Compressor;
-import org.h2.engine.Constants;
-import org.h2.engine.Database;
-import org.h2.engine.Mode;
-import org.h2.engine.Session;
-import org.h2.engine.Setting;
+import org.h2.engine.*;
 import org.h2.expression.Expression;
 import org.h2.expression.ValueExpression;
 import org.h2.message.DbException;
@@ -27,6 +22,8 @@ import org.h2.util.JdbcUtils;
 import org.h2.util.StringUtils;
 import org.h2.value.CompareMode;
 import org.h2.value.ValueInt;
+
+import java.text.Collator;
 
 /**
  * This class represents the statement

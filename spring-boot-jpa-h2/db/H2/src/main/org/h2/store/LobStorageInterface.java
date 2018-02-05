@@ -5,11 +5,12 @@
  */
 package org.h2.store;
 
+import org.h2.value.Value;
+import org.h2.value.ValueLobDb;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
-import org.h2.value.Value;
-import org.h2.value.ValueLobDb;
 
 /**
  * A mechanism to store and retrieve lob data.

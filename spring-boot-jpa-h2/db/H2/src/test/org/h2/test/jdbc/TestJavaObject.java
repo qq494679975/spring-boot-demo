@@ -5,18 +5,13 @@
  */
 package org.h2.test.jdbc;
 
-import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.Arrays;
-import java.util.UUID;
-
 import org.h2.engine.SysProperties;
 import org.h2.test.TestBase;
+
+import java.io.Serializable;
+import java.sql.*;
+import java.util.Arrays;
+import java.util.UUID;
 
 /**
  * Tests java object values when SysProperties.SERIALIZE_JAVA_OBJECT property is

@@ -5,14 +5,14 @@
  */
 package org.h2.bnf.context;
 
+import org.h2.engine.SysProperties;
+import org.h2.util.New;
+import org.h2.util.StringUtils;
+
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import org.h2.engine.SysProperties;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
 
 /**
  * Contains meta data information about a database schema.

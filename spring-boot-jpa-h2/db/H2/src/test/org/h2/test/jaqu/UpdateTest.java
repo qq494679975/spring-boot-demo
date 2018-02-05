@@ -5,9 +5,10 @@
  */
 package org.h2.test.jaqu;
 
-import static java.sql.Date.valueOf;
 import org.h2.jaqu.Db;
 import org.h2.test.TestBase;
+
+import static java.sql.Date.valueOf;
 
 /**
  * Tests the Db.update() function.

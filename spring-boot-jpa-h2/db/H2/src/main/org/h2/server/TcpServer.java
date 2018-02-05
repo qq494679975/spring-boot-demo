@@ -5,30 +5,18 @@
  */
 package org.h2.server;
 
-import java.io.IOException;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
 import org.h2.Driver;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.message.DbException;
-import org.h2.util.JdbcUtils;
-import org.h2.util.NetUtils;
-import org.h2.util.New;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
+import org.h2.util.*;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.sql.*;
+import java.util.*;
 
 /**
  * The TCP server implements the native H2 database server protocol.

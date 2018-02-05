@@ -5,14 +5,15 @@
  */
 package org.h2.test.db;
 
+import org.h2.test.TestBase;
+import org.h2.util.ScriptReader;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.h2.test.TestBase;
-import org.h2.util.ScriptReader;
 
 /**
  * This test runs a simple SQL script file and compares the output with the

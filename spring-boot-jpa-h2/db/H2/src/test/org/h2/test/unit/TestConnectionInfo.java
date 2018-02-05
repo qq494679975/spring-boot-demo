@@ -5,14 +5,14 @@
  */
 package org.h2.test.unit;
 
-import java.io.File;
-import java.util.Properties;
-
 import org.h2.api.ErrorCode;
 import org.h2.engine.ConnectionInfo;
 import org.h2.engine.SysProperties;
 import org.h2.test.TestBase;
 import org.h2.tools.DeleteDbFiles;
+
+import java.io.File;
+import java.util.Properties;
 
 /**
  * Test the ConnectionInfo class.

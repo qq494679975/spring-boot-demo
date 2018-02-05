@@ -5,14 +5,16 @@
  */
 package org.h2.test.jaqu;
 
-import static org.h2.jaqu.Define.primaryKey;
-import static org.h2.jaqu.Define.tableName;
-import java.text.MessageFormat;
-import java.util.Arrays;
-import java.util.List;
 import org.h2.jaqu.Db;
 import org.h2.jaqu.Table;
 import org.h2.test.TestBase;
+
+import java.text.MessageFormat;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.h2.jaqu.Define.primaryKey;
+import static org.h2.jaqu.Define.tableName;
 
 /**
  * Tests if converting a CLOB to a String works.

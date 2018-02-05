@@ -5,8 +5,6 @@
  */
 package org.h2.index;
 
-import java.lang.ref.SoftReference;
-import java.util.Arrays;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Session;
@@ -17,6 +15,9 @@ import org.h2.store.Data;
 import org.h2.store.Page;
 import org.h2.store.PageStore;
 import org.h2.value.Value;
+
+import java.lang.ref.SoftReference;
+import java.util.Arrays;
 
 /**
  * A leaf page that contains data of one or multiple rows. Format:

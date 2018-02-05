@@ -5,20 +5,13 @@
  */
 package org.h2.command.ddl;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.command.Parser;
 import org.h2.command.Prepared;
 import org.h2.constraint.Constraint;
 import org.h2.constraint.ConstraintReferential;
-import org.h2.engine.Constants;
-import org.h2.engine.Database;
-import org.h2.engine.DbObject;
-import org.h2.engine.Right;
-import org.h2.engine.Session;
+import org.h2.engine.*;
 import org.h2.expression.Expression;
 import org.h2.expression.ExpressionVisitor;
 import org.h2.index.Index;
@@ -33,6 +26,10 @@ import org.h2.table.Column;
 import org.h2.table.Table;
 import org.h2.table.TableView;
 import org.h2.util.New;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * This class represents the statements

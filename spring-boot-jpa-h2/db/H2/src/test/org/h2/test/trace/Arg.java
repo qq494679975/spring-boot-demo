@@ -20,9 +20,9 @@
  */
 package org.h2.test.trace;
 
-import java.math.BigDecimal;
-
 import org.h2.util.StringUtils;
+
+import java.math.BigDecimal;
 
 /**
  * An argument of a statement.

@@ -5,15 +5,6 @@
  */
 package org.h2.jmx;
 
-import java.lang.management.ManagementFactory;
-
-import java.sql.Timestamp;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.TreeMap;
-import javax.management.JMException;
-import javax.management.MBeanServer;
-import javax.management.ObjectName;
 import org.h2.command.Command;
 import org.h2.engine.ConnectionInfo;
 import org.h2.engine.Constants;
@@ -22,6 +13,15 @@ import org.h2.engine.Session;
 import org.h2.store.PageStore;
 import org.h2.table.Table;
 import org.h2.util.New;
+
+import javax.management.JMException;
+import javax.management.MBeanServer;
+import javax.management.ObjectName;
+import java.lang.management.ManagementFactory;
+import java.sql.Timestamp;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * The MBean implementation.

@@ -5,9 +5,6 @@
  */
 package org.h2.expression;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.TreeSet;
 import org.h2.engine.Session;
 import org.h2.index.IndexCondition;
 import org.h2.message.DbException;
@@ -17,6 +14,10 @@ import org.h2.util.StatementBuilder;
 import org.h2.value.Value;
 import org.h2.value.ValueBoolean;
 import org.h2.value.ValueNull;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.TreeSet;
 
 /**
  * Used for optimised IN(...) queries where the contents of the IN list are all

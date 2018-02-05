@@ -5,10 +5,11 @@
  */
 package org.h2.android;
 
+import android.database.Cursor;
+import org.h2.util.StringUtils;
+
 import java.util.Map;
 import java.util.Set;
-import org.h2.util.StringUtils;
-import android.database.Cursor;
 
 /**
  * This helper class is used to build SQL statements.

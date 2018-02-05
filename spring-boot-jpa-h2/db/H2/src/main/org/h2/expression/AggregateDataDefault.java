@@ -8,12 +8,7 @@ package org.h2.expression;
 import org.h2.engine.Database;
 import org.h2.message.DbException;
 import org.h2.util.ValueHashMap;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueBoolean;
-import org.h2.value.ValueDouble;
-import org.h2.value.ValueLong;
-import org.h2.value.ValueNull;
+import org.h2.value.*;
 
 /**
  * Data stored while calculating an aggregate.

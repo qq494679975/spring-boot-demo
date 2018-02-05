@@ -5,15 +5,6 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.BindException;
-import java.net.ConnectException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.Properties;
 import org.h2.Driver;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
@@ -27,6 +18,11 @@ import org.h2.util.NetUtils;
 import org.h2.util.SortedProperties;
 import org.h2.util.StringUtils;
 import org.h2.value.Transfer;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.*;
+import java.util.Properties;
 
 /**
  * The file lock is used to lock a database so that only one process can write

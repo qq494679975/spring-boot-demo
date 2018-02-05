@@ -8,11 +8,7 @@ package org.h2.test.poweroff;
 import java.io.File;
 import java.io.FileDescriptor;
 import java.io.RandomAccessFile;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.concurrent.TimeUnit;
 
 /**

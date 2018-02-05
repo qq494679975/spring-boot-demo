@@ -5,9 +5,6 @@
  */
 package org.h2.jdbc;
 
-import java.sql.ParameterMetaData;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import org.h2.command.CommandInterface;
 import org.h2.expression.ParameterInterface;
 import org.h2.message.DbException;
@@ -16,6 +13,10 @@ import org.h2.message.TraceObject;
 import org.h2.util.MathUtils;
 import org.h2.value.DataType;
 import org.h2.value.Value;
+
+import java.sql.ParameterMetaData;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Information about the parameters of a prepared statement.

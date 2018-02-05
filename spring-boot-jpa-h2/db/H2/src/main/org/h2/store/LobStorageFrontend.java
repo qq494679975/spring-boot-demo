@@ -5,12 +5,13 @@
  */
 package org.h2.store;
 
+import org.h2.value.Value;
+import org.h2.value.ValueLobDb;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
-import org.h2.value.Value;
-import org.h2.value.ValueLobDb;
 
 /**
  * This factory creates in-memory objects and temporary files. It is used on the

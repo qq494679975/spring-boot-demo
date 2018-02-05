@@ -5,9 +5,9 @@
  */
 package org.h2.mvstore;
 
-import java.util.BitSet;
-
 import org.h2.util.MathUtils;
+
+import java.util.BitSet;
 
 /**
  * A free space bit set.

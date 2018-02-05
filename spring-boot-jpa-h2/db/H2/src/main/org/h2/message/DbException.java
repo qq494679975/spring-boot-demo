@@ -5,6 +5,13 @@
  */
 package org.h2.message;
 
+import org.h2.api.ErrorCode;
+import org.h2.engine.Constants;
+import org.h2.jdbc.JdbcSQLException;
+import org.h2.util.SortedProperties;
+import org.h2.util.StringUtils;
+import org.h2.util.Utils;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,13 +22,6 @@ import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.Map.Entry;
 import java.util.Properties;
-
-import org.h2.api.ErrorCode;
-import org.h2.engine.Constants;
-import org.h2.jdbc.JdbcSQLException;
-import org.h2.util.SortedProperties;
-import org.h2.util.StringUtils;
-import org.h2.util.Utils;
 
 /**
  * This exception wraps a checked exception.

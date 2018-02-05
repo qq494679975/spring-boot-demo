@@ -5,11 +5,19 @@
  */
 package org.h2.security;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import org.h2.api.ErrorCode;
+import org.h2.engine.SysProperties;
+import org.h2.message.DbException;
+import org.h2.store.fs.FileUtils;
+import org.h2.util.IOUtils;
+import org.h2.util.StringUtils;
+
+import javax.net.ServerSocketFactory;
+import javax.net.ssl.SSLServerSocket;
+import javax.net.ssl.SSLServerSocketFactory;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
@@ -21,26 +29,7 @@ import java.security.Security;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateFactory;
 import java.security.spec.PKCS8EncodedKeySpec;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
-
-import javax.net.ServerSocketFactory;
-import javax.net.ssl.SSLServerSocket;
-import javax.net.ssl.SSLServerSocketFactory;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
-
-import org.h2.api.ErrorCode;
-import org.h2.engine.SysProperties;
-import org.h2.message.DbException;
-import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.StringUtils;
+import java.util.*;
 
 /**
  * A factory to create new block cipher objects.

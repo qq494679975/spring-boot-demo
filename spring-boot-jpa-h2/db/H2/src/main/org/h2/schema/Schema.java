@@ -5,21 +5,10 @@
  */
 package org.h2.schema;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import org.h2.api.ErrorCode;
 import org.h2.command.ddl.CreateTableData;
 import org.h2.constraint.Constraint;
-import org.h2.engine.Database;
-import org.h2.engine.DbObject;
-import org.h2.engine.DbObjectBase;
-import org.h2.engine.DbSettings;
-import org.h2.engine.FunctionAlias;
-import org.h2.engine.Session;
-import org.h2.engine.SysProperties;
-import org.h2.engine.User;
+import org.h2.engine.*;
 import org.h2.index.Index;
 import org.h2.message.DbException;
 import org.h2.message.Trace;
@@ -29,6 +18,11 @@ import org.h2.table.Table;
 import org.h2.table.TableLink;
 import org.h2.util.New;
 import org.h2.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A schema as created by the SQL statement

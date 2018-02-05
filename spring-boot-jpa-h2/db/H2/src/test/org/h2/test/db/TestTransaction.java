@@ -5,18 +5,13 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Random;
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
 import org.h2.util.New;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Transactional tests, including transaction isolation tests, and tests related

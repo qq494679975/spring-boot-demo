@@ -5,20 +5,14 @@
  */
 package org.h2.util;
 
-import java.io.IOException;
-import java.net.BindException;
-import java.net.Inet6Address;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.ErrorCode;
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
 import org.h2.security.CipherFactory;
+
+import java.io.IOException;
+import java.net.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * This utility class contains socket helper functions.

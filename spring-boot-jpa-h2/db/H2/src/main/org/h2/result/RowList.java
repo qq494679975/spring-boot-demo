@@ -5,7 +5,6 @@
  */
 package org.h2.result;
 
-import java.util.ArrayList;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
 import org.h2.engine.Session;
@@ -13,6 +12,8 @@ import org.h2.store.Data;
 import org.h2.store.FileStore;
 import org.h2.util.New;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
 
 /**
  * A list of rows. If the list grows too large, it is buffered to disk

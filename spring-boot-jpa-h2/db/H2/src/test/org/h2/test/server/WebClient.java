@@ -5,6 +5,8 @@
  */
 package org.h2.test.server;
 
+import org.h2.util.IOUtils;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +14,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.UUID;
-import org.h2.util.IOUtils;
 
 /**
  * A simple web browser simulator.

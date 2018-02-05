@@ -6,6 +6,10 @@
  */
 package org.h2.util;
 
+import org.h2.api.ErrorCode;
+import org.h2.message.DbException;
+import org.h2.value.*;
+
 import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
@@ -14,13 +18,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
-import org.h2.api.ErrorCode;
-import org.h2.message.DbException;
-import org.h2.value.Value;
-import org.h2.value.ValueDate;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueTime;
-import org.h2.value.ValueTimestamp;
 
 /**
  * This utility class contains time conversion functions.

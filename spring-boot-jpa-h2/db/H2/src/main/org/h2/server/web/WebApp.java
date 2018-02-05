@@ -5,33 +5,6 @@
  */
 package org.h2.server.web;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ParameterMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Random;
 import org.h2.api.ErrorCode;
 import org.h2.bnf.Bnf;
 import org.h2.bnf.context.DbColumn;
@@ -43,25 +16,15 @@ import org.h2.engine.SysProperties;
 import org.h2.jdbc.JdbcSQLException;
 import org.h2.message.DbException;
 import org.h2.security.SHA256;
-import org.h2.tools.Backup;
-import org.h2.tools.ChangeFileEncryption;
-import org.h2.tools.ConvertTraceFile;
-import org.h2.tools.CreateCluster;
-import org.h2.tools.DeleteDbFiles;
-import org.h2.tools.Recover;
-import org.h2.tools.Restore;
-import org.h2.tools.RunScript;
-import org.h2.tools.Script;
-import org.h2.tools.SimpleResultSet;
-import org.h2.util.JdbcUtils;
-import org.h2.util.New;
-import org.h2.util.Profiler;
-import org.h2.util.ScriptReader;
-import org.h2.util.SortedProperties;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
-import org.h2.util.Utils;
+import org.h2.tools.*;
+import org.h2.util.*;
+
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.sql.*;
+import java.util.*;
 
 /**
  * For each connection to a session, an object of this class is created.

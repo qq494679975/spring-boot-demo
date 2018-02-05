@@ -5,7 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.HashSet;
 import org.h2.engine.Session;
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
@@ -18,6 +17,8 @@ import org.h2.table.RegularTable;
 import org.h2.table.TableFilter;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.HashSet;
 
 /**
  * The tree index is an in-memory index based on a binary AVL trees.

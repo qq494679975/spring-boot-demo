@@ -5,9 +5,10 @@
  */
 package org.h2.command;
 
-import java.util.ArrayList;
 import org.h2.expression.ParameterInterface;
 import org.h2.result.ResultInterface;
+
+import java.util.ArrayList;
 
 /**
  * Represents a list of SQL statements.

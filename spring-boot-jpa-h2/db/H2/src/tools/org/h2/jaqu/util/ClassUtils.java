@@ -5,6 +5,8 @@
  */
 package org.h2.jaqu.util;
 
+import org.h2.util.IOUtils;
+
 import java.io.Reader;
 import java.lang.reflect.Constructor;
 import java.math.BigDecimal;
@@ -14,7 +16,6 @@ import java.util.ArrayList;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
-import org.h2.util.IOUtils;
 
 /**
  * Generic utility methods.

@@ -5,21 +5,15 @@
  */
 package org.h2.build.i18n;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.RandomAccessFile;
-import java.util.Enumeration;
-import java.util.Properties;
 import org.h2.build.code.CheckTextFiles;
 import org.h2.build.indexer.HtmlConverter;
 import org.h2.util.IOUtils;
 import org.h2.util.SortedProperties;
 import org.h2.util.StringUtils;
+
+import java.io.*;
+import java.util.Enumeration;
+import java.util.Properties;
 
 /**
  * This class converts a file stored in the UTF-8 encoding format to

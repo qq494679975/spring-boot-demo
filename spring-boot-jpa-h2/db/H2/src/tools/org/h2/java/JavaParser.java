@@ -5,16 +5,13 @@
  */
 package org.h2.java;
 
+import org.h2.util.New;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.RandomAccessFile;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import org.h2.util.New;
+import java.util.*;
 
 /**
  * Converts Java to C.

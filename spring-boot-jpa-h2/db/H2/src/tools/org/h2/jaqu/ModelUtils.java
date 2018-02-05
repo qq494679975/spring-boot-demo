@@ -5,6 +5,9 @@
  */
 package org.h2.jaqu;
 
+import org.h2.jaqu.TableDefinition.FieldDefinition;
+import org.h2.util.StringUtils;
+
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -12,8 +15,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
-import org.h2.jaqu.TableDefinition.FieldDefinition;
-import org.h2.util.StringUtils;
 
 /**
  * Utility methods for models related to type mapping, default value validation,

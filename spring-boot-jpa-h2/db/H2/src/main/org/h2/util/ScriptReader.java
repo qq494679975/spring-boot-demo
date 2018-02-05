@@ -5,12 +5,13 @@
  */
 package org.h2.util;
 
+import org.h2.engine.Constants;
+import org.h2.message.DbException;
+
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
-import org.h2.engine.Constants;
-import org.h2.message.DbException;
 
 /**
  * This class can split SQL scripts to single SQL statements.

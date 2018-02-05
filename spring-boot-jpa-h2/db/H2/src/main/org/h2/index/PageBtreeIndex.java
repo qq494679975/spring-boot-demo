@@ -5,7 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.HashSet;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Session;
@@ -24,6 +23,8 @@ import org.h2.table.TableFilter;
 import org.h2.util.MathUtils;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.util.HashSet;
 
 /**
  * This is the most common type of index, a b tree index.

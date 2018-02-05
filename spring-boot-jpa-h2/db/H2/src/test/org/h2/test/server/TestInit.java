@@ -5,14 +5,15 @@
  */
 package org.h2.test.server;
 
+import org.h2.store.fs.FileUtils;
+import org.h2.test.TestBase;
+
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.Writer;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import org.h2.store.fs.FileUtils;
-import org.h2.test.TestBase;
 
 /**
  * Tests INIT command within embedded/server mode.

@@ -5,11 +5,6 @@
  */
 package org.h2.test.unit;
 
-import java.sql.SQLException;
-import java.util.HashSet;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.ErrorCode;
 import org.h2.engine.ConnectionInfo;
 import org.h2.engine.Constants;
@@ -25,6 +20,11 @@ import org.h2.util.IOUtils;
 import org.h2.util.New;
 import org.h2.util.Profiler;
 import org.h2.util.Utils;
+
+import java.sql.SQLException;
+import java.util.HashSet;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A test that calls another test, and after each write operation to the

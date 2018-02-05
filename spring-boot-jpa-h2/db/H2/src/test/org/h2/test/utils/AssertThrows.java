@@ -5,9 +5,10 @@
  */
 package org.h2.test.utils;
 
+import org.h2.message.DbException;
+
 import java.lang.reflect.Method;
 import java.sql.SQLException;
-import org.h2.message.DbException;
 
 /**
  * Helper class to simplify negative testing. Usage:

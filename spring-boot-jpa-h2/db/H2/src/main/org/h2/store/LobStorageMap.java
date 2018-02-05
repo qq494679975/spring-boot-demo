@@ -5,12 +5,6 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map.Entry;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Database;
@@ -24,6 +18,13 @@ import org.h2.util.New;
 import org.h2.util.StringUtils;
 import org.h2.value.Value;
 import org.h2.value.ValueLobDb;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map.Entry;
 
 /**
  * This class stores LOB objects in the database, in maps. This is the back-end

@@ -5,16 +5,17 @@
  */
 package org.h2;
 
+import org.h2.engine.Constants;
+import org.h2.jdbc.JdbcConnection;
+import org.h2.message.DbException;
+import org.h2.upgrade.DbUpgrade;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.DriverPropertyInfo;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Logger;
-import org.h2.engine.Constants;
-import org.h2.jdbc.JdbcConnection;
-import org.h2.message.DbException;
-import org.h2.upgrade.DbUpgrade;
 
 /**
  * The database driver. An application should not use this class directly. The

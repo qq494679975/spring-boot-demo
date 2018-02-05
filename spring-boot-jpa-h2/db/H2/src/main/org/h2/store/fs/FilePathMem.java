@@ -5,6 +5,12 @@
  */
 package org.h2.store.fs;
 
+import org.h2.api.ErrorCode;
+import org.h2.compress.CompressLZF;
+import org.h2.message.DbException;
+import org.h2.util.MathUtils;
+import org.h2.util.New;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,19 +18,8 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.nio.channels.NonWritableChannelException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
-
-import org.h2.api.ErrorCode;
-import org.h2.compress.CompressLZF;
-import org.h2.message.DbException;
-import org.h2.util.MathUtils;
-import org.h2.util.New;
 
 /**
  * This file system keeps files fully in memory. There is an option to compress

@@ -5,13 +5,14 @@
  */
 package org.h2.value;
 
+import org.h2.message.DbException;
+import org.h2.tools.SimpleResultSet;
+import org.h2.util.StatementBuilder;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import org.h2.message.DbException;
-import org.h2.tools.SimpleResultSet;
-import org.h2.util.StatementBuilder;
 
 /**
  * Implementation of the RESULT_SET data type.

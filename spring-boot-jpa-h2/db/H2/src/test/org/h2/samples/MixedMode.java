@@ -5,11 +5,12 @@
  */
 package org.h2.samples;
 
+import org.h2.tools.Server;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import org.h2.tools.Server;
 
 /**
  * This sample program opens the same database once in embedded mode,

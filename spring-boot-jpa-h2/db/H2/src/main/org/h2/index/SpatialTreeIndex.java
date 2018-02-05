@@ -5,8 +5,8 @@
  */
 package org.h2.index;
 
-import java.util.HashSet;
-import java.util.Iterator;
+import com.vividsolutions.jts.geom.Envelope;
+import com.vividsolutions.jts.geom.Geometry;
 import org.h2.engine.Session;
 import org.h2.message.DbException;
 import org.h2.mvstore.MVStore;
@@ -23,8 +23,9 @@ import org.h2.table.TableFilter;
 import org.h2.value.Value;
 import org.h2.value.ValueGeometry;
 import org.h2.value.ValueNull;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * This is an index based on a MVR-TreeMap.

@@ -5,29 +5,15 @@
  */
 package org.h2.build.doclet;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import com.sun.javadoc.*;
+import org.h2.util.StatementBuilder;
+import org.h2.util.StringUtils;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
-import org.h2.util.StatementBuilder;
-import org.h2.util.StringUtils;
-import com.sun.javadoc.ClassDoc;
-import com.sun.javadoc.ConstructorDoc;
-import com.sun.javadoc.ExecutableMemberDoc;
-import com.sun.javadoc.FieldDoc;
-import com.sun.javadoc.LanguageVersion;
-import com.sun.javadoc.MethodDoc;
-import com.sun.javadoc.ParamTag;
-import com.sun.javadoc.Parameter;
-import com.sun.javadoc.RootDoc;
-import com.sun.javadoc.Tag;
-import com.sun.javadoc.ThrowsTag;
-import com.sun.javadoc.Type;
 
 /**
  * This class is a custom doclet implementation to generate the

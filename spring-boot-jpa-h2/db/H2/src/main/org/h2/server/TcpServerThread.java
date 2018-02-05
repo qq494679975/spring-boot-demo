@@ -5,23 +5,9 @@
  */
 package org.h2.server;
 
-import java.io.ByteArrayInputStream;
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.net.Socket;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import org.h2.api.ErrorCode;
 import org.h2.command.Command;
-import org.h2.engine.ConnectionInfo;
-import org.h2.engine.Constants;
-import org.h2.engine.Engine;
-import org.h2.engine.Session;
-import org.h2.engine.SessionRemote;
-import org.h2.engine.SysProperties;
+import org.h2.engine.*;
 import org.h2.expression.Parameter;
 import org.h2.expression.ParameterInterface;
 import org.h2.expression.ParameterRemote;
@@ -37,6 +23,11 @@ import org.h2.util.StringUtils;
 import org.h2.value.Transfer;
 import org.h2.value.Value;
 import org.h2.value.ValueLobDb;
+
+import java.io.*;
+import java.net.Socket;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * One server thread is opened per client connection.

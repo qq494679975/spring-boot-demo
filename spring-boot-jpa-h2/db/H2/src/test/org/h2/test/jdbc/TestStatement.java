@@ -5,19 +5,15 @@
  */
 package org.h2.test.jdbc;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.util.HashMap;
-
 import org.h2.api.ErrorCode;
 import org.h2.engine.SysProperties;
 import org.h2.jdbc.JdbcStatement;
 import org.h2.store.fs.FileUtils;
 import org.h2.test.TestBase;
 import org.h2.util.New;
+
+import java.sql.*;
+import java.util.HashMap;
 
 /**
  * Tests for the Statement implementation.

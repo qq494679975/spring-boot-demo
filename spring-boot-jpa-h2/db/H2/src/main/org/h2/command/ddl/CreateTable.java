@@ -5,8 +5,6 @@
  */
 package org.h2.command.ddl;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import org.h2.api.ErrorCode;
 import org.h2.command.CommandInterface;
 import org.h2.command.dml.Insert;
@@ -26,6 +24,9 @@ import org.h2.table.Table;
 import org.h2.util.New;
 import org.h2.value.DataType;
 import org.h2.value.Value;
+
+import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * This class represents the statement

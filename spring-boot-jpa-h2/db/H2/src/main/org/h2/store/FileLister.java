@@ -5,10 +5,6 @@
  */
 package org.h2.store;
 
-import java.nio.channels.FileChannel;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.message.DbException;
@@ -16,6 +12,11 @@ import org.h2.message.TraceSystem;
 import org.h2.store.fs.FilePath;
 import org.h2.store.fs.FileUtils;
 import org.h2.util.New;
+
+import java.nio.channels.FileChannel;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Utility class to list the files of a database.

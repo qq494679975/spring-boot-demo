@@ -5,19 +5,16 @@
  */
 package org.h2.util;
 
+import org.h2.engine.SysProperties;
+import org.h2.mvstore.db.MVTable;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.lang.management.LockInfo;
-import java.lang.management.ManagementFactory;
-import java.lang.management.MonitorInfo;
-import java.lang.management.ThreadInfo;
-import java.lang.management.ThreadMXBean;
+import java.lang.management.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
-import org.h2.engine.SysProperties;
-import org.h2.mvstore.db.MVTable;
 
 /**
  * Detects deadlocks between threads. Prints out data in the same format as the

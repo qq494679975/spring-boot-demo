@@ -5,17 +5,13 @@
  */
 package org.h2.test.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
+import org.h2.test.TestBase;
+import org.h2.tools.SimpleResultSet;
+
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Locale;
-import org.h2.test.TestBase;
-import org.h2.tools.SimpleResultSet;
 
 /**
  * Test Oracle compatibility mode.

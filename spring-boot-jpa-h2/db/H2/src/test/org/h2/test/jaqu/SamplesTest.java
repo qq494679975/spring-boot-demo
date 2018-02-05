@@ -5,20 +5,16 @@
  */
 package org.h2.test.jaqu;
 
-import static org.h2.jaqu.Function.count;
-import static org.h2.jaqu.Function.isNull;
-import static org.h2.jaqu.Function.length;
-import static org.h2.jaqu.Function.max;
-import static org.h2.jaqu.Function.min;
-import static org.h2.jaqu.Function.not;
-import static org.h2.jaqu.Function.sum;
+import org.h2.jaqu.Db;
+import org.h2.jaqu.Filter;
+import org.h2.test.TestBase;
+
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.h2.jaqu.Db;
-import org.h2.jaqu.Filter;
-import org.h2.test.TestBase;
+
+import static org.h2.jaqu.Function.*;
 
 /**
  * This is the implementation of the 101 LINQ Samples as described in

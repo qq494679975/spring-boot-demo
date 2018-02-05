@@ -5,7 +5,6 @@
  */
 package org.h2.command.dml;
 
-import java.sql.ResultSet;
 import org.h2.command.CommandInterface;
 import org.h2.command.Prepared;
 import org.h2.engine.Session;
@@ -14,6 +13,8 @@ import org.h2.expression.ExpressionVisitor;
 import org.h2.result.LocalResult;
 import org.h2.result.ResultInterface;
 import org.h2.value.Value;
+
+import java.sql.ResultSet;
 
 /**
  * This class represents the statement

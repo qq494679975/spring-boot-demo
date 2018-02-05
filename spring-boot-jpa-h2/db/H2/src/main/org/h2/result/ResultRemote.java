@@ -5,8 +5,6 @@
  */
 package org.h2.result;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import org.h2.engine.Session;
 import org.h2.engine.SessionRemote;
 import org.h2.engine.SysProperties;
@@ -15,6 +13,9 @@ import org.h2.message.Trace;
 import org.h2.util.New;
 import org.h2.value.Transfer;
 import org.h2.value.Value;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * The client side part of a result set that is kept on the server.

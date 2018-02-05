@@ -5,12 +5,13 @@
  */
 package org.h2.build.doc;
 
-import java.util.ArrayList;
 import org.h2.bnf.Bnf;
 import org.h2.bnf.BnfVisitor;
 import org.h2.bnf.Rule;
 import org.h2.bnf.RuleFixed;
 import org.h2.util.StringUtils;
+
+import java.util.ArrayList;
 
 /**
  * A BNF visitor that generates HTML railroad diagrams.

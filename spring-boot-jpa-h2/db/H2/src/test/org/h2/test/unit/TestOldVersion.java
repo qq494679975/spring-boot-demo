@@ -5,22 +5,15 @@
  */
 package org.h2.test.unit;
 
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.Properties;
-
 import org.h2.api.ErrorCode;
 import org.h2.test.TestBase;
 import org.h2.tools.Server;
+
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.sql.*;
+import java.util.Properties;
 
 /**
  * Tests the compatibility with older versions

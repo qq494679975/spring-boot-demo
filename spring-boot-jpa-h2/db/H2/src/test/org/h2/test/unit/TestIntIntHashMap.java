@@ -5,10 +5,10 @@
  */
 package org.h2.test.unit;
 
-import java.util.Random;
-
 import org.h2.test.TestBase;
 import org.h2.util.IntIntHashMap;
+
+import java.util.Random;
 
 /**
  * Tests the IntHashMap class.

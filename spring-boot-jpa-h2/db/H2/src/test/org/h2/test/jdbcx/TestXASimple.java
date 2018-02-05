@@ -5,16 +5,17 @@
  */
 package org.h2.test.jdbcx;
 
+import org.h2.jdbcx.JdbcDataSource;
+import org.h2.test.TestBase;
+import org.h2.util.JdbcUtils;
+
+import javax.sql.XAConnection;
+import javax.transaction.xa.XAResource;
+import javax.transaction.xa.Xid;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import javax.sql.XAConnection;
-import javax.transaction.xa.XAResource;
-import javax.transaction.xa.Xid;
-import org.h2.jdbcx.JdbcDataSource;
-import org.h2.test.TestBase;
-import org.h2.util.JdbcUtils;
 
 /**
  * A simple XA test.

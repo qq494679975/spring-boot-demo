@@ -5,8 +5,6 @@
  */
 package org.h2.constraint;
 
-import java.util.HashSet;
-import java.util.Iterator;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Session;
 import org.h2.expression.Expression;
@@ -21,6 +19,9 @@ import org.h2.table.Table;
 import org.h2.table.TableFilter;
 import org.h2.util.New;
 import org.h2.util.StringUtils;
+
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * A check constraint.

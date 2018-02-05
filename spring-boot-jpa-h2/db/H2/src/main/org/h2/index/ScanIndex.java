@@ -5,12 +5,6 @@
  */
 package org.h2.index;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import org.h2.api.ErrorCode;
 import org.h2.engine.Constants;
 import org.h2.engine.Session;
@@ -24,6 +18,8 @@ import org.h2.table.IndexColumn;
 import org.h2.table.RegularTable;
 import org.h2.table.TableFilter;
 import org.h2.util.New;
+
+import java.util.*;
 
 /**
  * The scan index is not really an 'index' in the strict sense, because it can

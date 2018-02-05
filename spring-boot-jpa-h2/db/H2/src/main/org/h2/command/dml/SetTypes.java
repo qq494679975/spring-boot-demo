@@ -5,8 +5,9 @@
  */
 package org.h2.command.dml;
 
-import java.util.ArrayList;
 import org.h2.util.New;
+
+import java.util.ArrayList;
 
 /**
  * The list of setting for a SET statement.

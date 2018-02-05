@@ -5,14 +5,14 @@
  */
 package org.h2.samples;
 
+import org.h2.store.fs.FileUtils;
+import org.h2.tools.Csv;
+import org.h2.tools.SimpleResultSet;
+
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Types;
-
-import org.h2.store.fs.FileUtils;
-import org.h2.tools.Csv;
-import org.h2.tools.SimpleResultSet;
 
 /**
  * This sample application shows how to use the CSV tool

@@ -5,26 +5,6 @@
  */
 package org.h2.test.db;
 
-import java.io.ByteArrayInputStream;
-import java.io.CharArrayReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.sql.Blob;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Savepoint;
-import java.sql.Statement;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.api.ErrorCode;
 import org.h2.engine.SysProperties;
 import org.h2.jdbc.JdbcConnection;
@@ -36,6 +16,11 @@ import org.h2.util.IOUtils;
 import org.h2.util.JdbcUtils;
 import org.h2.util.StringUtils;
 import org.h2.util.Task;
+
+import java.io.*;
+import java.sql.*;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Tests LOB and CLOB data types.

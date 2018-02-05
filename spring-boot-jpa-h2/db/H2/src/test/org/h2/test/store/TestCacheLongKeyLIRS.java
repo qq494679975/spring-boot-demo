@@ -5,15 +5,15 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.cache.CacheLongKeyLIRS;
+import org.h2.test.TestBase;
+import org.h2.util.New;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.Random;
-
-import org.h2.mvstore.cache.CacheLongKeyLIRS;
-import org.h2.test.TestBase;
-import org.h2.util.New;
 
 /**
  * Tests the cache algorithm.

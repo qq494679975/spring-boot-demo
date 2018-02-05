@@ -5,6 +5,13 @@
  */
 package org.h2.test.store;
 
+import org.h2.mvstore.MVMap;
+import org.h2.mvstore.MVStore;
+import org.h2.store.FileLister;
+import org.h2.store.fs.FileUtils;
+import org.h2.test.TestBase;
+import org.h2.util.Task;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
@@ -13,12 +20,6 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.h2.mvstore.MVMap;
-import org.h2.mvstore.MVStore;
-import org.h2.store.FileLister;
-import org.h2.store.fs.FileUtils;
-import org.h2.test.TestBase;
-import org.h2.util.Task;
 
 /**
  * Tests performance and helps analyze bottlenecks.

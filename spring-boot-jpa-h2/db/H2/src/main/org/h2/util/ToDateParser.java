@@ -5,11 +5,11 @@
  */
 package org.h2.util;
 
-import static java.lang.String.format;
-
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.List;
+
+import static java.lang.String.format;
 
 /**
  * Emulates Oracle's TO_DATE function.<br>

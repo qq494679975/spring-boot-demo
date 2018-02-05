@@ -11,11 +11,7 @@ import org.h2.message.DbException;
 import org.h2.table.ColumnResolver;
 import org.h2.table.TableFilter;
 import org.h2.util.MathUtils;
-import org.h2.value.DataType;
-import org.h2.value.Value;
-import org.h2.value.ValueInt;
-import org.h2.value.ValueNull;
-import org.h2.value.ValueString;
+import org.h2.value.*;
 
 /**
  * A mathematical expression, or string concatenation.

@@ -5,6 +5,9 @@
  */
 package org.h2.test.synth.sql;
 
+import org.h2.test.TestBase;
+import org.h2.util.New;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.sql.ResultSet;
@@ -12,9 +15,6 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
-
-import org.h2.test.TestBase;
-import org.h2.util.New;
 
 /**
  * Represents an in-memory result.

@@ -5,28 +5,16 @@
  */
 package org.h2.tools;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.charset.Charset;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.concurrent.TimeUnit;
-
 import org.h2.engine.Constants;
 import org.h2.engine.SysProperties;
 import org.h2.message.DbException;
 import org.h2.store.fs.FileUtils;
-import org.h2.util.IOUtils;
-import org.h2.util.JdbcUtils;
-import org.h2.util.ScriptReader;
-import org.h2.util.StringUtils;
-import org.h2.util.Tool;
+import org.h2.util.*;
+
+import java.io.*;
+import java.nio.charset.Charset;
+import java.sql.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Runs a SQL script against a database.

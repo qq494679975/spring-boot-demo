@@ -5,9 +5,6 @@
  */
 package org.h2.expression;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.HashMap;
 import org.h2.api.Aggregate;
 import org.h2.api.ErrorCode;
 import org.h2.command.Parser;
@@ -21,6 +18,10 @@ import org.h2.util.StatementBuilder;
 import org.h2.value.DataType;
 import org.h2.value.Value;
 import org.h2.value.ValueNull;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.HashMap;
 
 /**
  * This class wraps a user-defined aggregate.

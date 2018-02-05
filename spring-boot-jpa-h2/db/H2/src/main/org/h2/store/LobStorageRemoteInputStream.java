@@ -5,11 +5,11 @@
  */
 package org.h2.store;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 import org.h2.message.DbException;
 import org.h2.value.ValueLobDb;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * An input stream that reads from a remote LOB.

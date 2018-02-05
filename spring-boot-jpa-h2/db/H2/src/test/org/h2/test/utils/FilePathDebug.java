@@ -5,6 +5,10 @@
  */
 package org.h2.test.utils;
 
+import org.h2.store.fs.FileBase;
+import org.h2.store.fs.FilePath;
+import org.h2.store.fs.FilePathWrapper;
+
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,9 +17,6 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.util.List;
-import org.h2.store.fs.FileBase;
-import org.h2.store.fs.FilePath;
-import org.h2.store.fs.FilePathWrapper;
 
 /**
  * A debugging file system that logs all operations.

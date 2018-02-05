@@ -5,14 +5,15 @@
  */
 package org.h2.test.unit;
 
-import java.io.File;
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
 import org.h2.test.TestBase;
 import org.h2.util.MathUtils;
 import org.h2.util.New;
 import org.h2.value.ValueInt;
+
+import java.io.File;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.ArrayList;
 
 /**
  * Tests if Tomcat would clear static fields when re-loading a web application.

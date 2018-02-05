@@ -5,13 +5,6 @@
  */
 package org.h2.engine;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Properties;
-
 import org.h2.api.ErrorCode;
 import org.h2.command.dml.SetTypes;
 import org.h2.message.DbException;
@@ -23,6 +16,9 @@ import org.h2.util.New;
 import org.h2.util.SortedProperties;
 import org.h2.util.StringUtils;
 import org.h2.util.Utils;
+
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Encapsulates the connection settings, including user name and password.
